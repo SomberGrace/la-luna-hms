@@ -278,10 +278,10 @@
 
       <!-- Payment Method -->
       <div>
-        <label class="block text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-1.5">
+        <span id="payment-method-label" class="block text-[11px] font-semibold uppercase tracking-wider text-slate-400 mb-1.5">
           Payment Method *
-        </label>
-        <div class="grid grid-cols-3 gap-2">
+        </span>
+        <div role="group" aria-labelledby="payment-method-label" class="grid grid-cols-3 gap-2">
           {#each ['Cash', 'Visa / POS', 'Airtel Money', 'TNM Mpamba', 'Cheque', 'Bank Transfer'] as m}
             <button
               type="button"

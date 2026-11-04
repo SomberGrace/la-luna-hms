@@ -74,4 +74,3 @@ func TestRequireRoleRejectsForbiddenRole(t *testing.T) {
 		t.Fatalf("expected 403 but got %d", res.Code)
 	}
 }
-

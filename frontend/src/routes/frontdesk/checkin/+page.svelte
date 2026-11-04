@@ -1,6 +1,7 @@
 <!-- frontend/src/routes/frontdesk/checkin/+page.svelte -->
 <script lang="ts">
   import { apiFetch } from '#lib/api';
+  import { getPendingArrivals } from '#lib/frontdeskReservations';
   import { page } from '$app/state';
   import { roomStore } from '#lib/stores/roomStore';
   import type { ReservationItem } from '#lib/types/guest';
@@ -61,25 +62,9 @@
     try {
       const res = await apiFetch('/api/v1/frontdesk/reservations');
       if (res.ok) {
-        const data = await res.json();
-        if (Array.isArray(data)) {
-          pendingReservations = data
-            .filter((d: any) => !d.checked_in && d.folio_status !== 'Closed')
-            .map((d: any) => ({
-              id: d.id || d.card_no,
-              res_code: d.res_code || d.card_no,
-              guest_name: d.guest_name,
-              guest_phone: d.guest_phone,
-              guest_id_doc: d.guest_id_doc || '',
-              room_type: d.room_type,
-              room_number: d.room_number,
-              check_in_date: d.check_in,
-              check_out_date: d.check_out,
-              nights: d.nights || 1,
-              deposit_paid: d.deposit_paid || 0,
-              status: 'Pending Arrival'
-            }));
-        }
+        const data: unknown = await res.json();
+        const arrivals = getPendingArrivals(data);
+        if (arrivals) pendingReservations = arrivals;
       }
     } catch (e) {
       console.warn('Failed to load live reservations:', e);

@@ -2,7 +2,7 @@
 
 export type RoomStatus = 'Available' | 'Occupied' | 'Cleaning' | 'OutOfService' | 'Reserved';
 
-export type RoomType = 'Standard' | 'Executive' | 'Apartment';
+export type RoomType = 'Standard' | 'Executive' | 'Apartment' | 'Sector Suite';
 
 export interface Room {
   id: string;
@@ -27,6 +27,7 @@ export interface FolioItem {
 
 export interface Folio {
   id: string;
+  card_no?: string;
   guest_id: string;
   guest_name: string;
   guest_phone?: string;

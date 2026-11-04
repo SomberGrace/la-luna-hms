@@ -173,13 +173,13 @@
       <!-- Additional Nights Selection -->
       <div>
         <div class="flex items-center justify-between mb-1.5">
-          <label class="block text-[11px] font-semibold uppercase tracking-wider text-slate-400">
+          <span id="extend-duration-label" class="block text-[11px] font-semibold uppercase tracking-wider text-slate-400">
             Extend Duration
-          </label>
+          </span>
           <span class="text-xs font-mono font-bold text-amber-400">+{additionalNights} Night(s)</span>
         </div>
 
-        <div class="flex items-center space-x-2">
+        <div role="group" aria-labelledby="extend-duration-label" class="flex items-center space-x-2">
           {#each [1, 2, 3, 5, 7] as n}
             <button
               type="button"

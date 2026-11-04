@@ -369,8 +369,8 @@
 
         <!-- Payment Method Options -->
         <div>
-          <label class="block text-[11px] font-semibold text-slate-400 mb-1">Payment Method</label>
-          <div class="grid grid-cols-4 gap-1.5">
+          <span id="walkin-payment-method-label" class="block text-[11px] font-semibold text-slate-400 mb-1">Payment Method</span>
+          <div role="group" aria-labelledby="walkin-payment-method-label" class="grid grid-cols-4 gap-1.5">
             {#each ['Cash', 'Visa', 'Airtel', 'Mpamba'] as method}
               <button
                 type="button"

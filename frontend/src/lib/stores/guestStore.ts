@@ -1,5 +1,6 @@
 // frontend/src/lib/stores/guestStore.ts
 import { writable, get } from 'svelte/store';
+import type { RoomType } from '#lib/types/room';
 
 export interface GuestStay {
   cardNo: string;
@@ -7,7 +8,7 @@ export interface GuestStay {
   phone: string;
   email: string;
   roomNumber: string;
-  roomType: 'Standard' | 'Executive' | 'Apartment';
+  roomType: RoomType;
   bedType: 'Single' | 'Double';
   ratePerNight: number;
   arrivalDate: string;
@@ -227,4 +228,3 @@ function createGuestStore() {
 }
 
 export const guestStore = createGuestStore();
-

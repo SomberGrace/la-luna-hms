@@ -320,4 +320,3 @@ func (h *ManagerHandler) ConsolidatedReport(w http.ResponseWriter, r *http.Reque
 		"department_breakdown": json.RawMessage(bdown),
 	})
 }
-

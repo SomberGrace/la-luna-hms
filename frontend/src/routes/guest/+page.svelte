@@ -238,7 +238,7 @@
     </div>
 
   <!-- ACTIVE BOOKING STATE -->
-  {:else}
+  {:else if activeBooking}
     <!-- Active Room Stay Card -->
     <div class="bg-gradient-to-br from-amber-600/15 via-slate-900 to-slate-900 border border-amber-500/30 rounded-3xl p-5 shadow-xl relative overflow-hidden">
       <div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-amber-500/5 blur-xl pointer-events-none"></div>

@@ -18,13 +18,16 @@ func NewAuthHandler(s *services.AuthService) *AuthHandler {
 	return &AuthHandler{authService: s}
 }
 
-// HandleLogin processes POST /api/v1/auth/login requests.
-func (h *AuthHandler) HandleLogin(w http.ResponseWriter, r *http.Request) {
-	// CORS preflight
+func setAuthHeaders(w http.ResponseWriter) {
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Access-Control-Allow-Methods", "POST, OPTIONS")
 	w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization, ngrok-skip-browser-warning")
 	w.Header().Set("Content-Type", "application/json")
+}
+
+// HandleLogin processes POST /api/v1/auth/login requests.
+func (h *AuthHandler) HandleLogin(w http.ResponseWriter, r *http.Request) {
+	setAuthHeaders(w)
 
 	if r.Method == http.MethodOptions {
 		w.WriteHeader(http.StatusNoContent)
@@ -56,10 +59,7 @@ func (h *AuthHandler) HandleLogin(w http.ResponseWriter, r *http.Request) {
 
 // HandleRegister processes POST /api/v1/auth/register requests for guest self-registration.
 func (h *AuthHandler) HandleRegister(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Access-Control-Allow-Origin", "*")
-	w.Header().Set("Access-Control-Allow-Methods", "POST, OPTIONS")
-	w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization, ngrok-skip-browser-warning")
-	w.Header().Set("Content-Type", "application/json")
+	setAuthHeaders(w)
 
 	if r.Method == http.MethodOptions {
 		w.WriteHeader(http.StatusNoContent)

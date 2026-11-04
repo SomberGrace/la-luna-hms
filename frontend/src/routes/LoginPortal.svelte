@@ -2,20 +2,16 @@
   import { createEventDispatcher } from 'svelte';
   import { apiFetch } from '#lib/api';
 
-  // Login credentials and options
-  let username = '';
-  let password = '';
-  let selectedRole = 'frontdesk';
-  let rememberMe = false;
-  let showPassword = false;
-
-  // UI state management
-  let isLoading = false;
-  let errorMessage = '';
+  let username = $state('');
+  let password = $state('');
+  let selectedRole = $state('frontdesk');
+  let rememberMe = $state(false);
+  let showPassword = $state(false);
+  let isLoading = $state(false);
+  let errorMessage = $state('');
 
   const dispatch = createEventDispatcher();
 
-  // Role metadata definition for RBAC context
   const roles = [
     { id: 'frontdesk', label: 'Front Desk Officer' },
     { id: 'restaurant', label: 'Restaurant Attendant' },
@@ -27,7 +23,8 @@
   /**
    * Submits credentials to the Golang backend auth endpoint.
    */
-  async function handleLogin() {
+  async function handleLogin(event: SubmitEvent) {
+    event.preventDefault();
     if (!username.trim() || !password.trim()) {
       errorMessage = 'Please enter both username and password.';
       return;
@@ -37,7 +34,6 @@
     isLoading = true;
 
     try {
-      // POST request to Golang backend route
       const response = await apiFetch('/api/v1/auth/login', {
         method: 'POST',
         headers: {
@@ -57,7 +53,6 @@
 
       const data = await response.json();
 
-      // Notify parent component of successful login
       dispatch('loginSuccess', {
         token: data.token,
         user: data.user,
@@ -101,7 +96,7 @@
       </div>
     {/if}
 
-    <form on:submit|preventDefault={handleLogin} class="space-y-5">
+    <form onsubmit={handleLogin} class="space-y-5">
       <!-- Role Selector -->
       <div>
         <label for="role" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
@@ -168,7 +163,7 @@
           </div>
           <button
             type="button"
-            on:click={() => (showPassword = !showPassword)}
+            onclick={() => (showPassword = !showPassword)}
             class="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-500 hover:text-slate-300 transition-colors"
           >
             {#if showPassword}

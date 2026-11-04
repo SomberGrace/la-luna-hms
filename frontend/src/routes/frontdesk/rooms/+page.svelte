@@ -331,7 +331,9 @@
             <p class="text-xs text-slate-400">{selectedRoomForStatus.type} - Floor {selectedRoomForStatus.floor || 1}</p>
           </div>
           <button
+            type="button"
             onclick={() => (selectedRoomForStatus = null)}
+            aria-label="Close status dialog"
             class="w-8 h-8 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center"
           >
             <i class="ph ph-x text-base"></i>
@@ -340,8 +342,8 @@
 
         <div class="space-y-3 text-xs">
           <div>
-            <label class="block text-slate-400 font-semibold mb-1">Target Operational Status</label>
-            <div class="grid grid-cols-2 gap-2">
+            <p id="room-status-label" class="block text-slate-400 font-semibold mb-1">Target Operational Status</p>
+            <div role="group" aria-labelledby="room-status-label" class="grid grid-cols-2 gap-2">
               {#each ['Available', 'Occupied', 'Cleaning', 'OutOfService'] as st}
                 <button
                   type="button"
@@ -357,8 +359,9 @@
           </div>
 
           <div>
-            <label class="block text-slate-400 font-semibold mb-1">Housekeeper / Attendant Name</label>
+            <label for="housekeeper-name" class="block text-slate-400 font-semibold mb-1">Housekeeper / Attendant Name</label>
             <input
+              id="housekeeper-name"
               type="text"
               placeholder="e.g. Grace Phiri"
               bind:value={housekeeperName}

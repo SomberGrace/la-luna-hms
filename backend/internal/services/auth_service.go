@@ -65,7 +65,8 @@ type jwtClaims struct {
 }
 
 func normalizeRole(role string) string {
-	switch strings.ToUpper(strings.TrimSpace(role)) {
+	role = strings.ToUpper(strings.TrimSpace(role))
+	switch role {
 	case "FRONTDESK", "FRONT_DESK":
 		return "FRONT_DESK"
 	case "CHEF", "KITCHEN":
@@ -81,23 +82,8 @@ func normalizeRole(role string) string {
 	case "ADMIN":
 		return "ADMIN"
 	default:
-		return strings.ToUpper(strings.TrimSpace(role))
+		return role
 	}
-}
-
-// fallbackUsers defines demo credentials for offline / dev mode.
-// Passwords are bcrypt hashes of "LaLuna2025!"
-var fallbackUsers = map[string]struct {
-	hash     string
-	fullName string
-	role     string
-}{
-	"admin":      {"$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lkii", "Admin User", "ADMIN"},
-	"reception1": {"$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lkii", "Faith Mwanza", "FRONT_DESK"},
-	"chef1":      {"$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lkii", "James Phiri", "CHEF"},
-	"barman1":    {"$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lkii", "Peter Banda", "BAR_ATTENDANT"},
-	"waiter1":    {"$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lkii", "Grace Tembo", "WAITER"},
-	"manager1":   {"$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lkii", "Dr. Samuel Gondwe", "MANAGER"},
 }
 
 // Login authenticates a user against PostgreSQL. Demo fallbacks are disabled.

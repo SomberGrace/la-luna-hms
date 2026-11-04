@@ -16,7 +16,7 @@ import (
 )
 
 func main() {
-	// 1. Load configuration settings (reads .env, DATABASE_URL, SUPABASE_DB_URL, JWT_SECRET, PORT)
+	// Load configuration and validate the signing secret.
 	cfg, err := config.LoadConfig()
 	if err != nil {
 		log.Fatalf("configuration error: %v", err)
@@ -25,11 +25,11 @@ func main() {
 		log.Fatal("JWT_SECRET must be set to a secret of at least 32 bytes")
 	}
 
-	// 2. Initialize auth service
+	// Set up authentication.
 	authService := services.NewAuthService(cfg.JWTSecret)
 	authService.SetDemoUsersEnabled(cfg.AllowDemoUsers)
 
-	// 3. Connect to Supabase PostgreSQL with automated baseline seeder
+	// Connect to PostgreSQL when a database URL is available.
 	var sqlDB *sql.DB
 	if cfg.DatabaseURL != "" {
 		var err error
@@ -43,7 +43,7 @@ func main() {
 		log.Println("⚠️ No DATABASE_URL found. Running without a database.")
 	}
 
-	// 4. Initialize Handlers for each Operational Module
+	// Set up the API handlers.
 	authHandler := handlers.NewAuthHandler(authService)
 	frontDeskHandler := handlers.NewFrontDeskHandler(sqlDB)
 	restaurantHandler := handlers.NewRestaurantHandler(sqlDB)
@@ -52,9 +52,12 @@ func main() {
 	managerHandler := handlers.NewManagerHandler(sqlDB)
 	guestHandler := handlers.NewGuestHandler(sqlDB, cfg.JWTSecret)
 
-	// =========================================================================
-	// ROUTE REGISTRATIONS
-	// =========================================================================
+	frontDeskOnly := handlers.RequireRole(cfg.JWTSecret, "FRONT_DESK")
+	restaurantOnly := handlers.RequireRole(cfg.JWTSecret, "WAITER")
+	kitchenOnly := handlers.RequireRole(cfg.JWTSecret, "CHEF")
+	barOnly := handlers.RequireRole(cfg.JWTSecret, "BAR_ATTENDANT")
+	managerOnly := handlers.RequireRole(cfg.JWTSecret, "MANAGER", "ADMIN")
+	guestOnly := handlers.RequireRole(cfg.JWTSecret, "GUEST")
 
 	// General Health
 	http.HandleFunc("/api/v1/health", func(w http.ResponseWriter, r *http.Request) {
@@ -67,87 +70,87 @@ func main() {
 		fmt.Fprintf(w, `{"status":"ok","service":"La Luna HMS Unified API","port":"%s","database":"%s"}`, cfg.Port, dbStatus)
 	})
 
-	// 1. Authentication & User Management
+	// Authentication
 	http.HandleFunc("/api/v1/auth/login", authHandler.HandleLogin)
 	http.HandleFunc("/api/v1/auth/register", authHandler.HandleRegister)
 
-	// 2. Front Desk & Room Management (PMS) & Customer Portal
-	http.Handle("/api/v1/frontdesk/health", handlers.RequireRole(cfg.JWTSecret, "FRONT_DESK")(frontDeskHandler.HealthCheck))
-	http.Handle("/api/v1/frontdesk/rooms", handlers.RequireRole(cfg.JWTSecret, "FRONT_DESK")(frontDeskHandler.GetRooms))
-	http.Handle("/api/v1/frontdesk/rooms/status", handlers.RequireRole(cfg.JWTSecret, "FRONT_DESK")(frontDeskHandler.UpdateRoomStatus))
-	http.Handle("/api/v1/frontdesk/checkin", handlers.RequireRole(cfg.JWTSecret, "FRONT_DESK")(frontDeskHandler.CheckIn))
-	http.Handle("/api/v1/frontdesk/walkin", handlers.RequireRole(cfg.JWTSecret, "FRONT_DESK")(frontDeskHandler.CheckIn))
-	http.Handle("/api/v1/frontdesk/folio", handlers.RequireRole(cfg.JWTSecret, "FRONT_DESK")(frontDeskHandler.GetFolio))
-	http.Handle("/api/v1/frontdesk/payment", handlers.RequireRole(cfg.JWTSecret, "FRONT_DESK")(frontDeskHandler.RecordPayment))
-	http.Handle("/api/v1/frontdesk/payments", handlers.RequireRole(cfg.JWTSecret, "FRONT_DESK")(frontDeskHandler.RecordPayment))
-	http.Handle("/api/v1/frontdesk/checkout", handlers.RequireRole(cfg.JWTSecret, "FRONT_DESK")(frontDeskHandler.CheckOut))
-	http.Handle("/api/v1/frontdesk/extension", handlers.RequireRole(cfg.JWTSecret, "FRONT_DESK")(frontDeskHandler.ExtendStay))
-	http.Handle("/api/v1/frontdesk/reservations", handlers.RequireRole(cfg.JWTSecret, "FRONT_DESK")(frontDeskHandler.GetReservations))
-	http.Handle("/api/v1/frontdesk/reports", handlers.RequireRole(cfg.JWTSecret, "FRONT_DESK")(frontDeskHandler.DailyReport))
+	// Front desk and room management
+	http.Handle("/api/v1/frontdesk/health", frontDeskOnly(frontDeskHandler.HealthCheck))
+	http.Handle("/api/v1/frontdesk/rooms", frontDeskOnly(frontDeskHandler.GetRooms))
+	http.Handle("/api/v1/frontdesk/rooms/status", frontDeskOnly(frontDeskHandler.UpdateRoomStatus))
+	http.Handle("/api/v1/frontdesk/checkin", frontDeskOnly(frontDeskHandler.CheckIn))
+	http.Handle("/api/v1/frontdesk/walkin", frontDeskOnly(frontDeskHandler.CheckIn))
+	http.Handle("/api/v1/frontdesk/folio", frontDeskOnly(frontDeskHandler.GetFolio))
+	http.Handle("/api/v1/frontdesk/payment", frontDeskOnly(frontDeskHandler.RecordPayment))
+	http.Handle("/api/v1/frontdesk/payments", frontDeskOnly(frontDeskHandler.RecordPayment))
+	http.Handle("/api/v1/frontdesk/checkout", frontDeskOnly(frontDeskHandler.CheckOut))
+	http.Handle("/api/v1/frontdesk/extension", frontDeskOnly(frontDeskHandler.ExtendStay))
+	http.Handle("/api/v1/frontdesk/reservations", frontDeskOnly(frontDeskHandler.GetReservations))
+	http.Handle("/api/v1/frontdesk/reports", frontDeskOnly(frontDeskHandler.DailyReport))
 
-	// 3. Restaurant POS & Table Management
-	http.Handle("/api/v1/restaurant/menu", handlers.RequireRole(cfg.JWTSecret, "WAITER")(func(w http.ResponseWriter, r *http.Request) {
+	// Restaurant and table management
+	http.Handle("/api/v1/restaurant/menu", restaurantOnly(func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodPost {
 			restaurantHandler.AddMenuItem(w, r)
 		} else {
 			restaurantHandler.GetMenu(w, r)
 		}
 	}))
-	http.Handle("/api/v1/restaurant/menu/availability", handlers.RequireRole(cfg.JWTSecret, "WAITER")(restaurantHandler.SetMenuAvailability))
-	http.Handle("/api/v1/restaurant/dockets", handlers.RequireRole(cfg.JWTSecret, "WAITER")(func(w http.ResponseWriter, r *http.Request) {
+	http.Handle("/api/v1/restaurant/menu/availability", restaurantOnly(restaurantHandler.SetMenuAvailability))
+	http.Handle("/api/v1/restaurant/dockets", restaurantOnly(func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodPost {
 			restaurantHandler.CreateDocket(w, r)
 		} else {
 			restaurantHandler.GetDockets(w, r)
 		}
 	}))
-	http.Handle("/api/v1/restaurant/dockets/settle", handlers.RequireRole(cfg.JWTSecret, "WAITER")(restaurantHandler.SettleDocket))
-	http.Handle("/api/v1/restaurant/occupied-rooms", handlers.RequireRole(cfg.JWTSecret, "WAITER")(restaurantHandler.GetOccupiedRooms))
-	http.Handle("/api/v1/restaurant/summary", handlers.RequireRole(cfg.JWTSecret, "WAITER")(restaurantHandler.Summary))
-	http.Handle("/api/v1/restaurant/reports", handlers.RequireRole(cfg.JWTSecret, "WAITER")(restaurantHandler.Reports))
-	http.Handle("/api/v1/restaurant/breakfast", handlers.RequireRole(cfg.JWTSecret, "WAITER")(restaurantHandler.GetBreakfastGuests))
-	http.Handle("/api/v1/restaurant/breakfast/reconcile", handlers.RequireRole(cfg.JWTSecret, "WAITER")(restaurantHandler.ReconcileBreakfast))
-	http.Handle("/api/v1/restaurant/dinner/reconcile", handlers.RequireRole(cfg.JWTSecret, "WAITER")(restaurantHandler.ReconcileDinner))
-	http.Handle("/api/v1/restaurant/reconcile", handlers.RequireRole(cfg.JWTSecret, "WAITER")(restaurantHandler.ReconcileMeal))
+	http.Handle("/api/v1/restaurant/dockets/settle", restaurantOnly(restaurantHandler.SettleDocket))
+	http.Handle("/api/v1/restaurant/occupied-rooms", restaurantOnly(restaurantHandler.GetOccupiedRooms))
+	http.Handle("/api/v1/restaurant/summary", restaurantOnly(restaurantHandler.Summary))
+	http.Handle("/api/v1/restaurant/reports", restaurantOnly(restaurantHandler.Reports))
+	http.Handle("/api/v1/restaurant/breakfast", restaurantOnly(restaurantHandler.GetBreakfastGuests))
+	http.Handle("/api/v1/restaurant/breakfast/reconcile", restaurantOnly(restaurantHandler.ReconcileBreakfast))
+	http.Handle("/api/v1/restaurant/dinner/reconcile", restaurantOnly(restaurantHandler.ReconcileDinner))
+	http.Handle("/api/v1/restaurant/reconcile", restaurantOnly(restaurantHandler.ReconcileMeal))
 
-	// 4. Kitchen Display System (KDS) & Stock Management
-	http.Handle("/api/v1/kitchen/stock", handlers.RequireRole(cfg.JWTSecret, "CHEF")(func(w http.ResponseWriter, r *http.Request) {
+	// Kitchen and stock management
+	http.Handle("/api/v1/kitchen/stock", kitchenOnly(func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodPost {
 			kitchenHandler.SaveStock(w, r)
 		} else {
 			kitchenHandler.GetStock(w, r)
 		}
 	}))
-	http.Handle("/api/v1/kitchen/recipes", handlers.RequireRole(cfg.JWTSecret, "CHEF")(kitchenHandler.GetRecipes))
-	http.Handle("/api/v1/kitchen/reports", handlers.RequireRole(cfg.JWTSecret, "CHEF")(kitchenHandler.SubmitReport))
-	http.Handle("/api/v1/kitchen/dockets", handlers.RequireRole(cfg.JWTSecret, "CHEF")(kitchenHandler.GetDockets))
-	http.Handle("/api/v1/kitchen/dockets/status", handlers.RequireRole(cfg.JWTSecret, "CHEF")(kitchenHandler.UpdateDocketStatus))
+	http.Handle("/api/v1/kitchen/recipes", kitchenOnly(kitchenHandler.GetRecipes))
+	http.Handle("/api/v1/kitchen/reports", kitchenOnly(kitchenHandler.SubmitReport))
+	http.Handle("/api/v1/kitchen/dockets", kitchenOnly(kitchenHandler.GetDockets))
+	http.Handle("/api/v1/kitchen/dockets/status", kitchenOnly(kitchenHandler.UpdateDocketStatus))
 
-	// 5. Bar POS & Stock Ledger
-	http.Handle("/api/v1/bar/items", handlers.RequireRole(cfg.JWTSecret, "BAR_ATTENDANT")(barHandler.GetItems))
-	http.Handle("/api/v1/bar/sales", handlers.RequireRole(cfg.JWTSecret, "BAR_ATTENDANT")(barHandler.RecordSale))
-	http.Handle("/api/v1/bar/ledger", handlers.RequireRole(cfg.JWTSecret, "BAR_ATTENDANT")(func(w http.ResponseWriter, r *http.Request) {
+	// Bar and stock ledger
+	http.Handle("/api/v1/bar/items", barOnly(barHandler.GetItems))
+	http.Handle("/api/v1/bar/sales", barOnly(barHandler.RecordSale))
+	http.Handle("/api/v1/bar/ledger", barOnly(func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodPost {
 			barHandler.SaveLedger(w, r)
 		} else {
 			barHandler.GetLedger(w, r)
 		}
 	}))
-	http.Handle("/api/v1/bar/reports", handlers.RequireRole(cfg.JWTSecret, "BAR_ATTENDANT")(barHandler.Reports))
+	http.Handle("/api/v1/bar/reports", barOnly(barHandler.Reports))
 
-	// 6. Centralized Management Dashboard & Analytics
-	http.Handle("/api/v1/manager/summary", handlers.RequireRole(cfg.JWTSecret, "MANAGER", "ADMIN")(managerHandler.Summary))
-	http.Handle("/api/v1/manager/audits", handlers.RequireRole(cfg.JWTSecret, "MANAGER", "ADMIN")(managerHandler.GetAudits))
-	http.Handle("/api/v1/manager/audits/action", handlers.RequireRole(cfg.JWTSecret, "MANAGER", "ADMIN")(managerHandler.AuditAction))
-	http.Handle("/api/v1/manager/consolidated", handlers.RequireRole(cfg.JWTSecret, "MANAGER", "ADMIN")(managerHandler.ConsolidatedReport))
+	// Management dashboard and analytics
+	http.Handle("/api/v1/manager/summary", managerOnly(managerHandler.Summary))
+	http.Handle("/api/v1/manager/audits", managerOnly(managerHandler.GetAudits))
+	http.Handle("/api/v1/manager/audits/action", managerOnly(managerHandler.AuditAction))
+	http.Handle("/api/v1/manager/consolidated", managerOnly(managerHandler.ConsolidatedReport))
 
-	// 7. Guest Booking Portal (Public & Authenticated)
+	// Guest booking portal
 	http.HandleFunc("/api/v1/guest/rooms", guestHandler.GetAvailableRooms)
-	http.Handle("/api/v1/guest/profile", handlers.RequireRole(cfg.JWTSecret, "GUEST")(guestHandler.GetProfile))
-	http.Handle("/api/v1/guest/book", handlers.RequireRole(cfg.JWTSecret, "GUEST")(guestHandler.CreateBooking))
-	http.Handle("/api/v1/guest/bookings", handlers.RequireRole(cfg.JWTSecret, "GUEST")(guestHandler.GetMyBookings))
-	http.Handle("/api/v1/guest/folio", handlers.RequireRole(cfg.JWTSecret, "GUEST")(guestHandler.GetMyFolio))
-	http.Handle("/api/v1/guest/checkin", handlers.RequireRole(cfg.JWTSecret, "GUEST")(guestHandler.CheckIn))
+	http.Handle("/api/v1/guest/profile", guestOnly(guestHandler.GetProfile))
+	http.Handle("/api/v1/guest/book", guestOnly(guestHandler.CreateBooking))
+	http.Handle("/api/v1/guest/bookings", guestOnly(guestHandler.GetMyBookings))
+	http.Handle("/api/v1/guest/folio", guestOnly(guestHandler.GetMyFolio))
+	http.Handle("/api/v1/guest/checkin", guestOnly(guestHandler.CheckIn))
 	http.HandleFunc("/api/v1/guest/resident-login", guestHandler.ResidentLogin)
 
 	fmt.Printf("✓ La Luna Hotel Management System Unified API active on port %s...\n", cfg.Port)

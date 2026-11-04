@@ -14,8 +14,8 @@ The SvelteKit frontend is also packaged as six separate Android apps from one sh
 ## Requirements
 
 - Node.js compatible with this project (Node 24 is supported)
-- JDK 17
-- Android SDK with Android platform/build tools 35
+- JDK 21 (required by the installed Capacitor Android 7.6.9 build)
+- Android SDK platform 35 with compatible Android build tools
 - A deployed backend reachable over HTTPS for mobile app builds
 
 Set the API origin before building. It must point to the deployed **unified HMS API** from `backend/cmd/server`, not the standalone front-desk service in `backend/cmd/frontdesk`. The build checks that `/api/v1/health` identifies the unified API and confirms a live PostgreSQL connection. Do not put database credentials or other server secrets in this value:

@@ -56,7 +56,7 @@ If the rewrite does not forward authorization headers, set the static site's bui
 
 ## Mobile APKs
 
-On a machine with Node 24, JDK 17, and Android SDK/build tools 35, set `VITE_API_BASE_URL` to the stable API HTTPS origin and run from `frontend`:
+On a machine with Node 24, JDK 21, Android SDK platform 35, and compatible Android build tools, set `VITE_API_BASE_URL` to the stable API HTTPS origin and run from `frontend`:
 
 ```powershell
 $env:VITE_API_BASE_URL = 'https://api.your-domain.example'

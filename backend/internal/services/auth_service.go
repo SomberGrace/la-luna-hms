@@ -86,7 +86,7 @@ func normalizeRole(role string) string {
 	}
 }
 
-// Login authenticates a user against PostgreSQL. Demo fallbacks are disabled.
+// Login - authenticates a user
 func (s *AuthService) Login(req LoginRequest) (*LoginResponse, error) {
 	normRole := normalizeRole(req.Role)
 
@@ -107,7 +107,7 @@ func (s *AuthService) Login(req LoginRequest) (*LoginResponse, error) {
 		)
 		err := row.Scan(&guestID, &username, &email, &passwordHash, &fullName)
 		if err != nil {
-			// Fallback check for legacy guest in user_accounts
+			// Fallback guest in user_accounts
 			var uID, uName, uMail, uHash, uRole string
 			uErr := s.db.QueryRow(
 				`SELECT user_id::text, username, email, password_hash, role::text
@@ -140,7 +140,7 @@ func (s *AuthService) Login(req LoginRequest) (*LoginResponse, error) {
 		return s.buildResponse(guestID, username, fullName, "GUEST")
 	}
 
-	// Staff and Admin login path (strictly from user_accounts table)
+	// Staff and Admin login path from user_accounts
 	if s.db != nil {
 		var userID, username, email, passwordHash, dbRole string
 		row := s.db.QueryRow(
@@ -169,7 +169,7 @@ func (s *AuthService) Login(req LoginRequest) (*LoginResponse, error) {
 	return nil, fmt.Errorf("invalid credentials")
 }
 
-// RegisterRequest is the JSON body for guest self-registration.
+// guest self-registration JSON.
 type RegisterRequest struct {
 	Username    string `json:"username"`
 	Email       string `json:"email"`
@@ -184,7 +184,7 @@ type RegisterRequest struct {
 	Address     string `json:"address"`
 }
 
-// Register creates a new guest account in guests and guest_accounts tables.
+// Register new guest account in guests and guest_accounts.
 func (s *AuthService) Register(req RegisterRequest) (*LoginResponse, error) {
 	if s.db == nil {
 		return nil, fmt.Errorf("registration requires database connection")
@@ -232,7 +232,7 @@ func (s *AuthService) Register(req RegisterRequest) (*LoginResponse, error) {
 		return nil, fmt.Errorf("failed to create guest profile: %w", err)
 	}
 
-	// 2. Insert into guest_accounts table (separate from staff user_accounts)
+	// 2. Insert into guest_accounts table
 	var guestAccountID string
 	err = tx.QueryRow(
 		`INSERT INTO guest_accounts (guest_id, username, email, password_hash)

@@ -1,9 +1,0 @@
-label,action,target,x,y,w,h
-Notifications,toast,,342,11,34,34
-Check availability,toast,,26,425,338,40
-Book room 101,modal,book-room,14,515,177,80
-Book room 104,modal,book-room,199,515,177,80
-Book room 201,modal,book-room,14,603,177,80
-Book room 301,modal,book-room,199,603,177,80
-Book room 401,modal,book-room,14,691,177,80
-Guest portal login,nav,/book/login,15,881,360,54

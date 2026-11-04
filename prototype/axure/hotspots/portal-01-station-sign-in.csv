@@ -1,8 +1,0 @@
-label,action,target,x,y,w,h
-Open Front Desk,nav,/frontdesk,31,234,161,46
-Open Restaurant,nav,/restaurant,199,234,161,46
-Open Bar,nav,/bar,31,287,161,46
-Open Kitchen,nav,/kitchen,199,287,161,46
-Open Manager,nav,/manager,31,340,161,46
-Open Guest Booking,nav,/book,199,340,161,46
-Sign in to front desk,nav,/frontdesk,31,534,328,40

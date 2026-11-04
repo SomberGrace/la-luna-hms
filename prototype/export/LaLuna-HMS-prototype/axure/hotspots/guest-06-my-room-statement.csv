@@ -1,9 +1,0 @@
-label,action,target,x,y,w,h
-Back to /guest,nav,/guest,14,11,34,34
-Notifications,toast,,342,11,34,34
-Query a charge,modal,guest-request,15,492,360,55
-Email a copy Sent to alice.banda@example.mw Send,toast,,15,547,360,54
-Stay,nav,/guest,8,631,92,48
-Dining,nav,/guest/dining,102,631,92,48
-My Bill,nav,/guest/folio,196,631,92,48
-Services,nav,/guest/services,290,631,92,48

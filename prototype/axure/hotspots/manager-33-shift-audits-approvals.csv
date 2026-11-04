@@ -1,9 +1,0 @@
-label,action,target,x,y,w,h
-Back to /manager,nav,/manager,14,11,34,34
-Notifications,toast,,342,11,34,34
-Review bar shift close,modal,audit-review,15,422,360,55
-Review folio adjustment,modal,audit-review,15,477,360,55
-Review stock variance,modal,audit-review,15,532,360,54
-Overview,nav,/manager,8,829,123,48
-Audits,nav,/manager/audits,133,829,123,48
-Consolidated,nav,/manager/reports,259,829,123,48

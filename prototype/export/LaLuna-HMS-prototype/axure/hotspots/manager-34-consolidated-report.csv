@@ -1,7 +1,0 @@
-label,action,target,x,y,w,h
-Back to /manager,nav,/manager,14,11,34,34
-Notifications,toast,,342,11,34,34
-Board pack Export the consolidated report as a signed PDF for the week,toast,,14,728,362,59
-Overview,nav,/manager,8,816,123,48
-Audits,nav,/manager/audits,133,816,123,48
-Consolidated,nav,/manager/reports,259,816,123,48

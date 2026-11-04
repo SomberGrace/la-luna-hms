@@ -1,0 +1,8 @@
+label,action,target,x,y,w,h
+Back to /bar,nav,/bar,14,11,34,34
+Notifications,toast,,342,11,34,34
+Manager sign-off Variance is within tolerance. Send the ledger to the ,toast,,14,713,362,59
+Hub,nav,/bar,8,800,92,48
+Stock,nav,/bar/stock,102,800,92,48
+Sales,nav,/bar/sales,196,800,92,48
+Reports,nav,/bar/reports,290,800,92,48

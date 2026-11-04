@@ -1,0 +1,12 @@
+label,action,target,x,y,w,h
+Notifications,toast,,342,11,34,34
+Manage bar stock,nav,/bar/stock,289,385,85,15
+Carlsberg Green Lager 500ml 8 bottles left · reorder at 12 Restock,toast,,15,411,360,55
+Malawi Gin 750ml 3 bottles left · reorder at 4 Restock,toast,,15,466,360,54
+Record bar sale,nav,/bar/sales,14,559,116,74
+Stock audit,nav,/bar/stock,137,559,116,74
+Bar reports,nav,/bar/reports,260,559,116,74
+Hub,nav,/bar,8,732,92,48
+Stock,nav,/bar/stock,102,732,92,48
+Sales,nav,/bar/sales,196,732,92,48
+Reports,nav,/bar/reports,290,732,92,48

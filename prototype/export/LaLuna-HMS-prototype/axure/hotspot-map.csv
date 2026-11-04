@@ -1,0 +1,379 @@
+screen_no,route,file,index,label,action,target,x,y,w,h,x_2x,y_2x,w_2x,h_2x
+1,/,portal-01-station-sign-in.png,1,Open Front Desk,nav,/frontdesk,31,234,161,46,62,468,322,92
+1,/,portal-01-station-sign-in.png,2,Open Restaurant,nav,/restaurant,199,234,161,46,398,468,322,92
+1,/,portal-01-station-sign-in.png,3,Open Bar,nav,/bar,31,287,161,46,62,574,322,92
+1,/,portal-01-station-sign-in.png,4,Open Kitchen,nav,/kitchen,199,287,161,46,398,574,322,92
+1,/,portal-01-station-sign-in.png,5,Open Manager,nav,/manager,31,340,161,46,62,680,322,92
+1,/,portal-01-station-sign-in.png,6,Open Guest Booking,nav,/book,199,340,161,46,398,680,322,92
+1,/,portal-01-station-sign-in.png,7,Sign in to front desk,nav,/frontdesk,31,534,328,40,62,1068,656,80
+2,/book,book-02-book-your-stay.png,1,Notifications,toast,,342,11,34,34,684,22,68,68
+2,/book,book-02-book-your-stay.png,2,Check availability,toast,,26,425,338,40,52,850,676,80
+2,/book,book-02-book-your-stay.png,3,Book room 101,modal,book-room,14,515,177,80,28,1030,354,160
+2,/book,book-02-book-your-stay.png,4,Book room 104,modal,book-room,199,515,177,80,398,1030,354,160
+2,/book,book-02-book-your-stay.png,5,Book room 201,modal,book-room,14,603,177,80,28,1206,354,160
+2,/book,book-02-book-your-stay.png,6,Book room 301,modal,book-room,199,603,177,80,398,1206,354,160
+2,/book,book-02-book-your-stay.png,7,Book room 401,modal,book-room,14,691,177,80,28,1382,354,160
+2,/book,book-02-book-your-stay.png,8,Guest portal login,nav,/book/login,15,881,360,54,30,1762,720,108
+3,/book/login,book-03-guest-account.png,1,Back to /book,nav,/book,14,11,34,34,28,22,68,68
+3,/book/login,book-03-guest-account.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+3,/book/login,book-03-guest-account.png,3,Sign in,toast,,14,230,51,25,28,460,102,50
+3,/book/login,book-03-guest-account.png,4,Create account,toast,,71,230,89,25,142,460,178,50
+3,/book/login,book-03-guest-account.png,5,Enter guest portal,nav,/guest,28,412,334,40,56,824,668,80
+4,/guest,guest-04-your-stay.png,1,Notifications,toast,,342,11,34,34,684,22,68,68
+4,/guest,guest-04-your-stay.png,2,In-room dining,nav,/guest/dining,14,421,177,92,28,842,354,184
+4,/guest,guest-04-your-stay.png,3,My bill,nav,/guest/folio,199,421,177,92,398,842,354,184
+4,/guest,guest-04-your-stay.png,4,Concierge,nav,/guest/services,14,521,177,92,28,1042,354,184
+4,/guest,guest-04-your-stay.png,5,Resort guide,nav,/guest/guide,199,521,177,92,398,1042,354,184
+4,/guest,guest-04-your-stay.png,6,Extra bath towels Requested 18:42 · Housekeeping On the way,toast,,15,652,360,54,30,1304,720,108
+4,/guest,guest-04-your-stay.png,7,View WiFi details,modal,wifi,14,719,362,52,28,1438,724,104
+4,/guest,guest-04-your-stay.png,8,Stay,nav,/guest,8,800,92,48,16,1600,184,96
+4,/guest,guest-04-your-stay.png,9,Dining,nav,/guest/dining,102,800,92,48,204,1600,184,96
+4,/guest,guest-04-your-stay.png,10,My Bill,nav,/guest/folio,196,800,92,48,392,1600,184,96
+4,/guest,guest-04-your-stay.png,11,Services,nav,/guest/services,290,800,92,48,580,1600,184,96
+5,/guest/dining,guest-05-in-room-dining.png,1,Back to /guest,nav,/guest,14,11,34,34,28,22,68,68
+5,/guest/dining,guest-05-in-room-dining.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+5,/guest/dining,guest-05-in-room-dining.png,3,All,toast,,14,230,33,25,28,460,66,50
+5,/guest/dining,guest-05-in-room-dining.png,4,Mains,toast,,53,230,48,25,106,460,96,50
+5,/guest/dining,guest-05-in-room-dining.png,5,Breakfast,toast,,108,230,64,25,216,460,128,50
+5,/guest/dining,guest-05-in-room-dining.png,6,Snacks,toast,,177,230,54,25,354,460,108,50
+5,/guest/dining,guest-05-in-room-dining.png,7,Drinks,toast,,237,230,50,25,474,460,100,50
+5,/guest/dining,guest-05-in-room-dining.png,8,Add Nsima,tray,,331,297,32,32,662,594,64,64
+5,/guest/dining,guest-05-in-room-dining.png,9,Add Tilapia,tray,,331,392,32,32,662,784,64,64
+5,/guest/dining,guest-05-in-room-dining.png,10,Add Tenderloin,tray,,331,487,32,32,662,974,64,64
+5,/guest/dining,guest-05-in-room-dining.png,11,Add Mandasi,tray,,331,576,32,32,662,1152,64,64
+5,/guest/dining,guest-05-in-room-dining.png,12,Add Juice,tray,,331,658,32,32,662,1316,64,64
+5,/guest/dining,guest-05-in-room-dining.png,13,Add Gin & Tonic,tray,,331,741,32,32,662,1482,64,64
+5,/guest/dining,guest-05-in-room-dining.png,14,Review dining tray,modal,guest-tray,14,808,362,44,28,1616,724,88
+5,/guest/dining,guest-05-in-room-dining.png,15,"Tilapia & Mango Juice Yesterday 19:20 · Delivered MWK 6,000",toast,,15,891,360,54,30,1782,720,108
+5,/guest/dining,guest-05-in-room-dining.png,16,Stay,nav,/guest,8,975,92,48,16,1950,184,96
+5,/guest/dining,guest-05-in-room-dining.png,17,Dining,nav,/guest/dining,102,975,92,48,204,1950,184,96
+5,/guest/dining,guest-05-in-room-dining.png,18,My Bill,nav,/guest/folio,196,975,92,48,392,1950,184,96
+5,/guest/dining,guest-05-in-room-dining.png,19,Services,nav,/guest/services,290,975,92,48,580,1950,184,96
+6,/guest/folio,guest-06-my-room-statement.png,1,Back to /guest,nav,/guest,14,11,34,34,28,22,68,68
+6,/guest/folio,guest-06-my-room-statement.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+6,/guest/folio,guest-06-my-room-statement.png,3,Query a charge,modal,guest-request,15,492,360,55,30,984,720,110
+6,/guest/folio,guest-06-my-room-statement.png,4,Email a copy Sent to alice.banda@example.mw Send,toast,,15,547,360,54,30,1094,720,108
+6,/guest/folio,guest-06-my-room-statement.png,5,Stay,nav,/guest,8,631,92,48,16,1262,184,96
+6,/guest/folio,guest-06-my-room-statement.png,6,Dining,nav,/guest/dining,102,631,92,48,204,1262,184,96
+6,/guest/folio,guest-06-my-room-statement.png,7,My Bill,nav,/guest/folio,196,631,92,48,392,1262,184,96
+6,/guest/folio,guest-06-my-room-statement.png,8,Services,nav,/guest/services,290,631,92,48,580,1262,184,96
+7,/guest/services,guest-07-concierge-requests.png,1,Back to /guest,nav,/guest,14,11,34,34,28,22,68,68
+7,/guest/services,guest-07-concierge-requests.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+7,/guest/services,guest-07-concierge-requests.png,3,Request bath towels,modal,guest-request,14,255,116,74,28,510,232,148
+7,/guest/services,guest-07-concierge-requests.png,4,Request room clean,modal,guest-request,137,255,116,74,274,510,232,148
+7,/guest/services,guest-07-concierge-requests.png,5,Request drinking water,modal,guest-request,260,255,116,74,520,510,232,148
+7,/guest/services,guest-07-concierge-requests.png,6,Request late check-out,modal,guest-request,14,336,116,74,28,672,232,148
+7,/guest/services,guest-07-concierge-requests.png,7,Request airport transfer,modal,guest-request,137,336,116,74,274,672,232,148
+7,/guest/services,guest-07-concierge-requests.png,8,Request first aid,modal,guest-request,260,336,116,74,520,672,232,148
+7,/guest/services,guest-07-concierge-requests.png,9,Send custom request,modal,guest-request,26,532,338,40,52,1064,676,80
+7,/guest/services,guest-07-concierge-requests.png,10,Extra bath towels 18:42 · Housekeeping On the way,toast,,15,623,360,55,30,1246,720,110
+7,/guest/services,guest-07-concierge-requests.png,11,Two bottles of water Yesterday 16:10 · Delivered Done,toast,,15,678,360,54,30,1356,720,108
+7,/guest/services,guest-07-concierge-requests.png,12,Stay,nav,/guest,8,762,92,48,16,1524,184,96
+7,/guest/services,guest-07-concierge-requests.png,13,Dining,nav,/guest/dining,102,762,92,48,204,1524,184,96
+7,/guest/services,guest-07-concierge-requests.png,14,My Bill,nav,/guest/folio,196,762,92,48,392,1524,184,96
+7,/guest/services,guest-07-concierge-requests.png,15,Services,nav,/guest/services,290,762,92,48,580,1524,184,96
+8,/guest/guide,guest-08-resort-guide-directory.png,1,Back to /guest,nav,/guest,14,11,34,34,28,22,68,68
+8,/guest/guide,guest-08-resort-guide-directory.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+8,/guest/guide,guest-08-resort-guide-directory.png,3,In-room dining Daily · 07:00 – 22:00 Ext. 2,toast,,15,256,360,55,30,512,720,110
+8,/guest/guide,guest-08-resort-guide-directory.png,4,Restaurant Breakfast 07:00 · Dinner 18:30 Ext. 2,toast,,15,311,360,55,30,622,720,110
+8,/guest/guide,guest-08-resort-guide-directory.png,5,Poolside bar Daily · 11:00 – 23:00 Ext. 1,toast,,15,366,360,55,30,732,720,110
+8,/guest/guide,guest-08-resort-guide-directory.png,6,Pool & beach Open 06:00 – 19:00 Ext. 0,toast,,15,421,360,54,30,842,720,108
+8,/guest/guide,guest-08-resort-guide-directory.png,7,"Front Desk Reception Housekeeping, billing and general help Ext. 0",toast,,15,515,360,55,30,1030,720,110
+8,/guest/guide,guest-08-resort-guide-directory.png,8,In-Room Dining Kitchen Orders and dietary questions Ext. 2,toast,,15,570,360,55,30,1140,720,110
+8,/guest/guide,guest-08-resort-guide-directory.png,9,"Housekeeping & Linen Towels, laundry and turndown Ext. 3",toast,,15,625,360,55,30,1250,720,110
+8,/guest/guide,guest-08-resort-guide-directory.png,10,General Manager On Duty Feedback and escalations Ext. 4,toast,,15,680,360,55,30,1360,720,110
+8,/guest/guide,guest-08-resort-guide-directory.png,11,Emergency & First Aid Urgent medical assistance Ext. 9,toast,,15,735,360,54,30,1470,720,108
+8,/guest/guide,guest-08-resort-guide-directory.png,12,"Sunset cruise 17:00 · 90 min · MWK 45,000",toast,,14,828,177,92,28,1656,354,184
+8,/guest/guide,guest-08-resort-guide-directory.png,13,"Snorkel safari 09:00 · 2 hrs · MWK 38,000",toast,,199,828,177,92,398,1656,354,184
+8,/guest/guide,guest-08-resort-guide-directory.png,14,"Village walk 14:00 · 2 hrs · MWK 20,000",toast,,14,928,177,92,28,1856,354,184
+8,/guest/guide,guest-08-resort-guide-directory.png,15,"Birdwatching 06:30 · 2 hrs · MWK 25,000",toast,,199,928,177,92,398,1856,354,184
+8,/guest/guide,guest-08-resort-guide-directory.png,16,Stay,nav,/guest,8,1120,92,48,16,2240,184,96
+8,/guest/guide,guest-08-resort-guide-directory.png,17,Dining,nav,/guest/dining,102,1120,92,48,204,2240,184,96
+8,/guest/guide,guest-08-resort-guide-directory.png,18,My Bill,nav,/guest/folio,196,1120,92,48,392,2240,184,96
+8,/guest/guide,guest-08-resort-guide-directory.png,19,Services,nav,/guest/services,290,1120,92,48,580,2240,184,96
+9,/frontdesk,frontdesk-09-front-desk-hub.png,1,Notifications,toast,,342,11,34,34,684,22,68,68
+9,/frontdesk,frontdesk-09-front-desk-hub.png,2,Check in Alice Banda,nav,/frontdesk/checkin,15,407,360,55,30,814,720,110
+9,/frontdesk,frontdesk-09-front-desk-hub.png,3,Check in Thandiwe Phiri,nav,/frontdesk/checkin,15,462,360,55,30,924,720,110
+9,/frontdesk,frontdesk-09-front-desk-hub.png,4,Check in James Mwale,nav,/frontdesk/checkin,15,517,360,54,30,1034,720,108
+9,/frontdesk,frontdesk-09-front-desk-hub.png,5,View all rooms,nav,/frontdesk/rooms,300,589,74,15,600,1178,148,30
+9,/frontdesk,frontdesk-09-front-desk-hub.png,6,Open folio for room 102,nav,/frontdesk/folio,15,615,360,55,30,1230,720,110
+9,/frontdesk,frontdesk-09-front-desk-hub.png,7,Open folio for room 205,nav,/frontdesk/folio,15,670,360,54,30,1340,720,108
+9,/frontdesk,frontdesk-09-front-desk-hub.png,8,Rooms,nav,/frontdesk/rooms,14,763,116,74,28,1526,232,148
+9,/frontdesk,frontdesk-09-front-desk-hub.png,9,Walk-in,nav,/frontdesk/walkin,137,763,116,74,274,1526,232,148
+9,/frontdesk,frontdesk-09-front-desk-hub.png,10,Folio,nav,/frontdesk/folio,260,763,116,74,520,1526,232,148
+9,/frontdesk,frontdesk-09-front-desk-hub.png,11,Checkout,nav,/frontdesk/checkout,14,844,116,74,28,1688,232,148
+9,/frontdesk,frontdesk-09-front-desk-hub.png,12,Payments,nav,/frontdesk/payments,137,844,116,74,274,1688,232,148
+9,/frontdesk,frontdesk-09-front-desk-hub.png,13,Housekeeping,nav,/frontdesk/housekeeping,260,844,116,74,520,1688,232,148
+9,/frontdesk,frontdesk-09-front-desk-hub.png,14,Stay extension,nav,/frontdesk/extension,14,925,116,74,28,1850,232,148
+9,/frontdesk,frontdesk-09-front-desk-hub.png,15,Offline sync,nav,/frontdesk/offline,137,925,116,74,274,1850,232,148
+9,/frontdesk,frontdesk-09-front-desk-hub.png,16,Reception reports,nav,/frontdesk/reports,260,925,116,74,520,1850,232,148
+9,/frontdesk,frontdesk-09-front-desk-hub.png,17,Review room 102 folio,nav,/frontdesk/folio,14,1011,362,59,28,2022,724,118
+9,/frontdesk,frontdesk-09-front-desk-hub.png,18,Hub,nav,/frontdesk,8,1098,73,48,16,2196,146,96
+9,/frontdesk,frontdesk-09-front-desk-hub.png,19,Rooms,nav,/frontdesk/rooms,83,1098,73,48,166,2196,146,96
+9,/frontdesk,frontdesk-09-front-desk-hub.png,20,Walk-In,nav,/frontdesk/walkin,158,1098,73,48,316,2196,146,96
+9,/frontdesk,frontdesk-09-front-desk-hub.png,21,Folio,nav,/frontdesk/folio,234,1098,73,48,468,2196,146,96
+9,/frontdesk,frontdesk-09-front-desk-hub.png,22,Checkout,nav,/frontdesk/checkout,309,1098,73,48,618,2196,146,96
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,1,Back to /frontdesk,nav,/frontdesk,14,11,34,34,28,22,68,68
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,3,All 12,toast,,14,230,45,25,28,460,90,50
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,4,Available 2,toast,,65,230,69,25,130,460,138,50
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,5,Occupied 9,toast,,140,230,72,25,280,460,144,50
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,6,Out of service 1,toast,,218,230,89,25,436,460,178,50
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,7,Change status for room 101,modal,room-status,14,269,177,80,28,538,354,160
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,8,Change status for room 102,modal,room-status,199,269,177,80,398,538,354,160
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,9,Change status for room 103,modal,room-status,14,357,177,80,28,714,354,160
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,10,Change status for room 104,modal,room-status,199,357,177,80,398,714,354,160
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,11,Change status for room 201,modal,room-status,14,445,177,80,28,890,354,160
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,12,Change status for room 205,modal,room-status,199,445,177,80,398,890,354,160
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,13,Change status for room 301,modal,room-status,14,533,177,80,28,1066,354,160
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,14,Change status for room 304,modal,room-status,199,533,177,80,398,1066,354,160
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,15,Change status for room 401,modal,room-status,14,621,177,80,28,1242,354,160
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,16,Hub,nav,/frontdesk,8,801,73,48,16,1602,146,96
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,17,Rooms,nav,/frontdesk/rooms,83,801,73,48,166,1602,146,96
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,18,Walk-In,nav,/frontdesk/walkin,158,801,73,48,316,1602,146,96
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,19,Folio,nav,/frontdesk/folio,234,801,73,48,468,1602,146,96
+10,/frontdesk/rooms,frontdesk-10-room-inventory.png,20,Checkout,nav,/frontdesk/checkout,309,801,73,48,618,1602,146,96
+11,/frontdesk/walkin,frontdesk-11-rapid-walk-in.png,1,Back to /frontdesk,nav,/frontdesk,14,11,34,34,28,22,68,68
+11,/frontdesk/walkin,frontdesk-11-rapid-walk-in.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+11,/frontdesk/walkin,frontdesk-11-rapid-walk-in.png,3,Complete walk-in check-in,modal,walkin-success,28,584,334,40,56,1168,668,80
+11,/frontdesk/walkin,frontdesk-11-rapid-walk-in.png,4,Hub,nav,/frontdesk,8,758,73,48,16,1516,146,96
+11,/frontdesk/walkin,frontdesk-11-rapid-walk-in.png,5,Rooms,nav,/frontdesk/rooms,83,758,73,48,166,1516,146,96
+11,/frontdesk/walkin,frontdesk-11-rapid-walk-in.png,6,Walk-In,nav,/frontdesk/walkin,158,758,73,48,316,1516,146,96
+11,/frontdesk/walkin,frontdesk-11-rapid-walk-in.png,7,Folio,nav,/frontdesk/folio,234,758,73,48,468,1516,146,96
+11,/frontdesk/walkin,frontdesk-11-rapid-walk-in.png,8,Checkout,nav,/frontdesk/checkout,309,758,73,48,618,1516,146,96
+12,/frontdesk/checkin,frontdesk-12-reservation-check-in.png,1,Back to /frontdesk,nav,/frontdesk,14,11,34,34,28,22,68,68
+12,/frontdesk/checkin,frontdesk-12-reservation-check-in.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+12,/frontdesk/checkin,frontdesk-12-reservation-check-in.png,3,Alice Banda,toast,,14,230,73,25,28,460,146,50
+12,/frontdesk/checkin,frontdesk-12-reservation-check-in.png,4,Thandiwe Phiri,toast,,93,230,87,25,186,460,174,50
+12,/frontdesk/checkin,frontdesk-12-reservation-check-in.png,5,James Mwale,toast,,186,230,82,25,372,460,164,50
+12,/frontdesk/checkin,frontdesk-12-reservation-check-in.png,6,Confirm check-in,modal,checkin-success,28,571,334,40,56,1142,668,80
+12,/frontdesk/checkin,frontdesk-12-reservation-check-in.png,7,Hub,nav,/frontdesk,8,675,73,48,16,1350,146,96
+12,/frontdesk/checkin,frontdesk-12-reservation-check-in.png,8,Rooms,nav,/frontdesk/rooms,83,675,73,48,166,1350,146,96
+12,/frontdesk/checkin,frontdesk-12-reservation-check-in.png,9,Walk-In,nav,/frontdesk/walkin,158,675,73,48,316,1350,146,96
+12,/frontdesk/checkin,frontdesk-12-reservation-check-in.png,10,Folio,nav,/frontdesk/folio,234,675,73,48,468,1350,146,96
+12,/frontdesk/checkin,frontdesk-12-reservation-check-in.png,11,Checkout,nav,/frontdesk/checkout,309,675,73,48,618,1350,146,96
+13,/frontdesk/folio,frontdesk-13-guest-billing-folio.png,1,Back to /frontdesk,nav,/frontdesk,14,11,34,34,28,22,68,68
+13,/frontdesk/folio,frontdesk-13-guest-billing-folio.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+13,/frontdesk/folio,frontdesk-13-guest-billing-folio.png,3,Post payment,nav,/frontdesk/payments,14,471,116,74,28,942,232,148
+13,/frontdesk/folio,frontdesk-13-guest-billing-folio.png,4,Extend stay,nav,/frontdesk/extension,137,471,116,74,274,942,232,148
+13,/frontdesk/folio,frontdesk-13-guest-billing-folio.png,5,Check out room 104,nav,/frontdesk/checkout,260,471,116,74,520,942,232,148
+13,/frontdesk/folio,frontdesk-13-guest-billing-folio.png,6,Hub,nav,/frontdesk,8,761,73,48,16,1522,146,96
+13,/frontdesk/folio,frontdesk-13-guest-billing-folio.png,7,Rooms,nav,/frontdesk/rooms,83,761,73,48,166,1522,146,96
+13,/frontdesk/folio,frontdesk-13-guest-billing-folio.png,8,Walk-In,nav,/frontdesk/walkin,158,761,73,48,316,1522,146,96
+13,/frontdesk/folio,frontdesk-13-guest-billing-folio.png,9,Folio,nav,/frontdesk/folio,234,761,73,48,468,1522,146,96
+13,/frontdesk/folio,frontdesk-13-guest-billing-folio.png,10,Checkout,nav,/frontdesk/checkout,309,761,73,48,618,1522,146,96
+14,/frontdesk/payments,frontdesk-14-payment-terminal.png,1,Back to /frontdesk,nav,/frontdesk,14,11,34,34,28,22,68,68
+14,/frontdesk/payments,frontdesk-14-payment-terminal.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+14,/frontdesk/payments,frontdesk-14-payment-terminal.png,3,Post payment,modal,payment-receipt,28,425,334,40,56,850,668,80
+14,/frontdesk/payments,frontdesk-14-payment-terminal.png,4,View receipt,modal,payment-receipt,15,518,360,55,30,1036,720,110
+14,/frontdesk/payments,frontdesk-14-payment-terminal.png,5,View receipt,modal,payment-receipt,15,573,360,54,30,1146,720,108
+14,/frontdesk/payments,frontdesk-14-payment-terminal.png,6,Hub,nav,/frontdesk,8,657,73,48,16,1314,146,96
+14,/frontdesk/payments,frontdesk-14-payment-terminal.png,7,Rooms,nav,/frontdesk/rooms,83,657,73,48,166,1314,146,96
+14,/frontdesk/payments,frontdesk-14-payment-terminal.png,8,Walk-In,nav,/frontdesk/walkin,158,657,73,48,316,1314,146,96
+14,/frontdesk/payments,frontdesk-14-payment-terminal.png,9,Folio,nav,/frontdesk/folio,234,657,73,48,468,1314,146,96
+14,/frontdesk/payments,frontdesk-14-payment-terminal.png,10,Checkout,nav,/frontdesk/checkout,309,657,73,48,618,1314,146,96
+15,/frontdesk/checkout,frontdesk-15-check-out-terminal.png,1,Back to /frontdesk,nav,/frontdesk,14,11,34,34,28,22,68,68
+15,/frontdesk/checkout,frontdesk-15-check-out-terminal.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+15,/frontdesk/checkout,frontdesk-15-check-out-terminal.png,3,Complete check-out,modal,checkout-success,26,653,338,40,52,1306,676,80
+15,/frontdesk/checkout,frontdesk-15-check-out-terminal.png,4,Hub,nav,/frontdesk,8,755,73,48,16,1510,146,96
+15,/frontdesk/checkout,frontdesk-15-check-out-terminal.png,5,Rooms,nav,/frontdesk/rooms,83,755,73,48,166,1510,146,96
+15,/frontdesk/checkout,frontdesk-15-check-out-terminal.png,6,Walk-In,nav,/frontdesk/walkin,158,755,73,48,316,1510,146,96
+15,/frontdesk/checkout,frontdesk-15-check-out-terminal.png,7,Folio,nav,/frontdesk/folio,234,755,73,48,468,1510,146,96
+15,/frontdesk/checkout,frontdesk-15-check-out-terminal.png,8,Checkout,nav,/frontdesk/checkout,309,755,73,48,618,1510,146,96
+16,/frontdesk/extension,frontdesk-16-stay-extension.png,1,Back to /frontdesk,nav,/frontdesk,14,11,34,34,28,22,68,68
+16,/frontdesk/extension,frontdesk-16-stay-extension.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+16,/frontdesk/extension,frontdesk-16-stay-extension.png,3,Confirm extension,modal,extension-success,28,374,334,40,56,748,668,80
+16,/frontdesk/extension,frontdesk-16-stay-extension.png,4,Hub,nav,/frontdesk,8,561,73,48,16,1122,146,96
+16,/frontdesk/extension,frontdesk-16-stay-extension.png,5,Rooms,nav,/frontdesk/rooms,83,561,73,48,166,1122,146,96
+16,/frontdesk/extension,frontdesk-16-stay-extension.png,6,Walk-In,nav,/frontdesk/walkin,158,561,73,48,316,1122,146,96
+16,/frontdesk/extension,frontdesk-16-stay-extension.png,7,Folio,nav,/frontdesk/folio,234,561,73,48,468,1122,146,96
+16,/frontdesk/extension,frontdesk-16-stay-extension.png,8,Checkout,nav,/frontdesk/checkout,309,561,73,48,618,1122,146,96
+17,/frontdesk/housekeeping,frontdesk-17-housekeeping.png,1,Back to /frontdesk,nav,/frontdesk,14,11,34,34,28,22,68,68
+17,/frontdesk/housekeeping,frontdesk-17-housekeeping.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+17,/frontdesk/housekeeping,frontdesk-17-housekeeping.png,3,Room 102 Dirty · Guest departed 10:00 Mark clean,toast,,15,422,360,55,30,844,720,110
+17,/frontdesk/housekeeping,frontdesk-17-housekeeping.png,4,Room 205 Dirty · Stayover service Mark clean,toast,,15,477,360,55,30,954,720,110
+17,/frontdesk/housekeeping,frontdesk-17-housekeeping.png,5,Room 201 Inspect · Supervisor assigned Pass,toast,,15,532,360,55,30,1064,720,110
+17,/frontdesk/housekeeping,frontdesk-17-housekeeping.png,6,Hub,nav,/frontdesk,8,726,73,48,16,1452,146,96
+17,/frontdesk/housekeeping,frontdesk-17-housekeeping.png,7,Rooms,nav,/frontdesk/rooms,83,726,73,48,166,1452,146,96
+17,/frontdesk/housekeeping,frontdesk-17-housekeeping.png,8,Walk-In,nav,/frontdesk/walkin,158,726,73,48,316,1452,146,96
+17,/frontdesk/housekeeping,frontdesk-17-housekeeping.png,9,Folio,nav,/frontdesk/folio,234,726,73,48,468,1452,146,96
+17,/frontdesk/housekeeping,frontdesk-17-housekeeping.png,10,Checkout,nav,/frontdesk/checkout,309,726,73,48,618,1452,146,96
+18,/frontdesk/offline,frontdesk-18-offline-sync-queue.png,1,Back to /frontdesk,nav,/frontdesk,14,11,34,34,28,22,68,68
+18,/frontdesk/offline,frontdesk-18-offline-sync-queue.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+18,/frontdesk/offline,frontdesk-18-offline-sync-queue.png,3,Walk-in check-in · Memory Tembo Room 103 · 08:01 · queued Retry,toast,,15,422,360,55,30,844,720,110
+18,/frontdesk/offline,frontdesk-18-offline-sync-queue.png,4,"Folio charge · Room 102 Minibar · MWK 3,500 · 07:58 Retry",toast,,15,477,360,55,30,954,720,110
+18,/frontdesk/offline,frontdesk-18-offline-sync-queue.png,5,"Cash payment · Room 205 MWK 18,000 · 07:54 Retry",toast,,15,532,360,54,30,1064,720,108
+18,/frontdesk/offline,frontdesk-18-offline-sync-queue.png,6,Queue replays automatically Keep this screen open while the connection,toast,,14,786,362,59,28,1572,724,118
+18,/frontdesk/offline,frontdesk-18-offline-sync-queue.png,7,Hub,nav,/frontdesk,8,874,73,48,16,1748,146,96
+18,/frontdesk/offline,frontdesk-18-offline-sync-queue.png,8,Rooms,nav,/frontdesk/rooms,83,874,73,48,166,1748,146,96
+18,/frontdesk/offline,frontdesk-18-offline-sync-queue.png,9,Walk-In,nav,/frontdesk/walkin,158,874,73,48,316,1748,146,96
+18,/frontdesk/offline,frontdesk-18-offline-sync-queue.png,10,Folio,nav,/frontdesk/folio,234,874,73,48,468,1748,146,96
+18,/frontdesk/offline,frontdesk-18-offline-sync-queue.png,11,Checkout,nav,/frontdesk/checkout,309,874,73,48,618,1748,146,96
+19,/frontdesk/reports,frontdesk-19-reception-reports.png,1,Back to /frontdesk,nav,/frontdesk,14,11,34,34,28,22,68,68
+19,/frontdesk/reports,frontdesk-19-reception-reports.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+19,/frontdesk/reports,frontdesk-19-reception-reports.png,3,Close shift,modal,shift-close,14,761,362,59,28,1522,724,118
+19,/frontdesk/reports,frontdesk-19-reception-reports.png,4,Hub,nav,/frontdesk,8,849,73,48,16,1698,146,96
+19,/frontdesk/reports,frontdesk-19-reception-reports.png,5,Rooms,nav,/frontdesk/rooms,83,849,73,48,166,1698,146,96
+19,/frontdesk/reports,frontdesk-19-reception-reports.png,6,Walk-In,nav,/frontdesk/walkin,158,849,73,48,316,1698,146,96
+19,/frontdesk/reports,frontdesk-19-reception-reports.png,7,Folio,nav,/frontdesk/folio,234,849,73,48,468,1698,146,96
+19,/frontdesk/reports,frontdesk-19-reception-reports.png,8,Checkout,nav,/frontdesk/checkout,309,849,73,48,618,1698,146,96
+20,/restaurant,restaurant-20-restaurant-hub.png,1,Notifications,toast,,342,11,34,34,684,22,68,68
+20,/restaurant,restaurant-20-restaurant-hub.png,2,View all dockets,nav,/restaurant/dockets,319,400,55,15,638,800,110,30
+20,/restaurant,restaurant-20-restaurant-hub.png,3,Open docket 0184,nav,/restaurant/dockets,15,426,360,55,30,852,720,110
+20,/restaurant,restaurant-20-restaurant-hub.png,4,Open docket 0183,nav,/restaurant/dockets,15,481,360,55,30,962,720,110
+20,/restaurant,restaurant-20-restaurant-hub.png,5,Open docket 0182,nav,/restaurant/dockets,15,536,360,54,30,1072,720,108
+20,/restaurant,restaurant-20-restaurant-hub.png,6,New docket,modal,new-docket,14,629,116,74,28,1258,232,148
+20,/restaurant,restaurant-20-restaurant-hub.png,7,Menu,nav,/restaurant/menu,137,629,116,74,274,1258,232,148
+20,/restaurant,restaurant-20-restaurant-hub.png,8,Dockets,nav,/restaurant/dockets,260,629,116,74,520,1258,232,148
+20,/restaurant,restaurant-20-restaurant-hub.png,9,Restaurant reports,nav,/restaurant/reports,14,710,116,74,28,1420,232,148
+20,/restaurant,restaurant-20-restaurant-hub.png,10,Open kitchen stock,nav,/kitchen/stock,14,796,362,59,28,1592,724,118
+20,/restaurant,restaurant-20-restaurant-hub.png,11,Hub,nav,/restaurant,8,884,92,48,16,1768,184,96
+20,/restaurant,restaurant-20-restaurant-hub.png,12,Menu,nav,/restaurant/menu,102,884,92,48,204,1768,184,96
+20,/restaurant,restaurant-20-restaurant-hub.png,13,Dockets,nav,/restaurant/dockets,196,884,92,48,392,1768,184,96
+20,/restaurant,restaurant-20-restaurant-hub.png,14,Reports,nav,/restaurant/reports,290,884,92,48,580,1768,184,96
+21,/restaurant/menu,restaurant-21-menu-items.png,1,Back to /restaurant,nav,/restaurant,14,11,34,34,28,22,68,68
+21,/restaurant/menu,restaurant-21-menu-items.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+21,/restaurant/menu,restaurant-21-menu-items.png,3,All 9,toast,,14,230,41,25,28,460,82,50
+21,/restaurant/menu,restaurant-21-menu-items.png,4,Mains,toast,,61,230,48,25,122,460,96,50
+21,/restaurant/menu,restaurant-21-menu-items.png,5,Breakfast,toast,,116,230,64,25,232,460,128,50
+21,/restaurant/menu,restaurant-21-menu-items.png,6,Snacks,toast,,185,230,54,25,370,460,108,50
+21,/restaurant/menu,restaurant-21-menu-items.png,7,Drinks,toast,,245,230,50,25,490,460,100,50
+21,/restaurant/menu,restaurant-21-menu-items.png,8,Add Nsima with Stewed Chicken,toast,,331,290,32,32,662,580,64,64
+21,/restaurant/menu,restaurant-21-menu-items.png,9,Add Grilled Lake Tilapia (Chambo),toast,,331,373,32,32,662,746,64,64
+21,/restaurant/menu,restaurant-21-menu-items.png,10,Add Prime Beef Tenderloin,toast,,331,455,32,32,662,910,64,64
+21,/restaurant/menu,restaurant-21-menu-items.png,11,Add Full English Resort Breakfast,toast,,331,538,32,32,662,1076,64,64
+21,/restaurant/menu,restaurant-21-menu-items.png,12,Add Warm Mandasi & Local Honey,toast,,331,620,32,32,662,1240,64,64
+21,/restaurant/menu,restaurant-21-menu-items.png,13,Add Malawi Gin & Tonic,toast,,331,703,32,32,662,1406,64,64
+21,/restaurant/menu,restaurant-21-menu-items.png,14,Add menu item,modal,add-menu-item,26,835,338,40,52,1670,676,80
+21,/restaurant/menu,restaurant-21-menu-items.png,15,Hub,nav,/restaurant,8,916,92,48,16,1832,184,96
+21,/restaurant/menu,restaurant-21-menu-items.png,16,Menu,nav,/restaurant/menu,102,916,92,48,204,1832,184,96
+21,/restaurant/menu,restaurant-21-menu-items.png,17,Dockets,nav,/restaurant/dockets,196,916,92,48,392,1832,184,96
+21,/restaurant/menu,restaurant-21-menu-items.png,18,Reports,nav,/restaurant/reports,290,916,92,48,580,1832,184,96
+22,/restaurant/dockets,restaurant-22-dockets.png,1,Back to /restaurant,nav,/restaurant,14,11,34,34,28,22,68,68
+22,/restaurant/dockets,restaurant-22-dockets.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+22,/restaurant/dockets,restaurant-22-dockets.png,3,New docket,modal,new-docket,300,400,74,15,600,800,148,30
+22,/restaurant/dockets,restaurant-22-dockets.png,4,Bump,toast,,300,529,63,27,600,1058,126,54
+22,/restaurant/dockets,restaurant-22-dockets.png,5,Bump,toast,,300,680,63,27,600,1360,126,54
+22,/restaurant/dockets,restaurant-22-dockets.png,6,Bump,toast,,300,831,63,27,600,1662,126,54
+22,/restaurant/dockets,restaurant-22-dockets.png,7,Hub,nav,/restaurant,8,970,92,48,16,1940,184,96
+22,/restaurant/dockets,restaurant-22-dockets.png,8,Menu,nav,/restaurant/menu,102,970,92,48,204,1940,184,96
+22,/restaurant/dockets,restaurant-22-dockets.png,9,Dockets,nav,/restaurant/dockets,196,970,92,48,392,1940,184,96
+22,/restaurant/dockets,restaurant-22-dockets.png,10,Reports,nav,/restaurant/reports,290,970,92,48,580,1940,184,96
+23,/restaurant/reports,restaurant-23-restaurant-report.png,1,Back to /restaurant,nav,/restaurant,14,11,34,34,28,22,68,68
+23,/restaurant/reports,restaurant-23-restaurant-report.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+23,/restaurant/reports,restaurant-23-restaurant-report.png,3,Send to manager Restaurant totals feed the manager consolidation repor,toast,,14,746,362,59,28,1492,724,118
+23,/restaurant/reports,restaurant-23-restaurant-report.png,4,Hub,nav,/restaurant,8,833,92,48,16,1666,184,96
+23,/restaurant/reports,restaurant-23-restaurant-report.png,5,Menu,nav,/restaurant/menu,102,833,92,48,204,1666,184,96
+23,/restaurant/reports,restaurant-23-restaurant-report.png,6,Dockets,nav,/restaurant/dockets,196,833,92,48,392,1666,184,96
+23,/restaurant/reports,restaurant-23-restaurant-report.png,7,Reports,nav,/restaurant/reports,290,833,92,48,580,1666,184,96
+24,/bar,bar-24-bar-hub.png,1,Notifications,toast,,342,11,34,34,684,22,68,68
+24,/bar,bar-24-bar-hub.png,2,Manage bar stock,nav,/bar/stock,289,385,85,15,578,770,170,30
+24,/bar,bar-24-bar-hub.png,3,Carlsberg Green Lager 500ml 8 bottles left · reorder at 12 Restock,toast,,15,411,360,55,30,822,720,110
+24,/bar,bar-24-bar-hub.png,4,Malawi Gin 750ml 3 bottles left · reorder at 4 Restock,toast,,15,466,360,54,30,932,720,108
+24,/bar,bar-24-bar-hub.png,5,Record bar sale,nav,/bar/sales,14,559,116,74,28,1118,232,148
+24,/bar,bar-24-bar-hub.png,6,Stock audit,nav,/bar/stock,137,559,116,74,274,1118,232,148
+24,/bar,bar-24-bar-hub.png,7,Bar reports,nav,/bar/reports,260,559,116,74,520,1118,232,148
+24,/bar,bar-24-bar-hub.png,8,Hub,nav,/bar,8,732,92,48,16,1464,184,96
+24,/bar,bar-24-bar-hub.png,9,Stock,nav,/bar/stock,102,732,92,48,204,1464,184,96
+24,/bar,bar-24-bar-hub.png,10,Sales,nav,/bar/sales,196,732,92,48,392,1464,184,96
+24,/bar,bar-24-bar-hub.png,11,Reports,nav,/bar/reports,290,732,92,48,580,1464,184,96
+25,/bar/stock,bar-25-stock-audit.png,1,Back to /bar,nav,/bar,14,11,34,34,28,22,68,68
+25,/bar/stock,bar-25-stock-audit.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+25,/bar/stock,bar-25-stock-audit.png,3,All items,toast,,14,230,59,25,28,460,118,50
+25,/bar/stock,bar-25-stock-audit.png,4,Low stock,toast,,79,230,66,25,158,460,132,50
+25,/bar/stock,bar-25-stock-audit.png,5,Spirits,toast,,151,230,50,25,302,460,100,50
+25,/bar/stock,bar-25-stock-audit.png,6,Beer,toast,,207,230,42,25,414,460,84,50
+25,/bar/stock,bar-25-stock-audit.png,7,Update lager stock,modal,add-bar-item,15,270,360,55,30,540,720,110
+25,/bar/stock,bar-25-stock-audit.png,8,Update gin stock,modal,add-bar-item,15,325,360,55,30,650,720,110
+25,/bar/stock,bar-25-stock-audit.png,9,Update wine stock,modal,add-bar-item,15,380,360,55,30,760,720,110
+25,/bar/stock,bar-25-stock-audit.png,10,Update stout stock,modal,add-bar-item,15,435,360,55,30,870,720,110
+25,/bar/stock,bar-25-stock-audit.png,11,Update mixer stock,modal,add-bar-item,15,490,360,55,30,980,720,110
+25,/bar/stock,bar-25-stock-audit.png,12,Update tonic stock,modal,add-bar-item,15,545,360,54,30,1090,720,108
+25,/bar/stock,bar-25-stock-audit.png,13,Add bar item,modal,add-bar-item,26,679,338,40,52,1358,676,80
+25,/bar/stock,bar-25-stock-audit.png,14,Hub,nav,/bar,8,831,92,48,16,1662,184,96
+25,/bar/stock,bar-25-stock-audit.png,15,Stock,nav,/bar/stock,102,831,92,48,204,1662,184,96
+25,/bar/stock,bar-25-stock-audit.png,16,Sales,nav,/bar/sales,196,831,92,48,392,1662,184,96
+25,/bar/stock,bar-25-stock-audit.png,17,Reports,nav,/bar/reports,290,831,92,48,580,1662,184,96
+26,/bar/sales,bar-26-record-sales.png,1,Back to /bar,nav,/bar,14,11,34,34,28,22,68,68
+26,/bar/sales,bar-26-record-sales.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+26,/bar/sales,bar-26-record-sales.png,3,Record sale,modal,sale-recorded,28,478,334,40,56,956,668,80
+26,/bar/sales,bar-26-record-sales.png,4,"2 × Guinness Stout 12:51 · Room 205 MWK 5,000",toast,,15,571,360,55,30,1142,720,110
+26,/bar/sales,bar-26-record-sales.png,5,"1 × Gin & Tonic 12:38 · Cash MWK 3,500",toast,,15,626,360,55,30,1252,720,110
+26,/bar/sales,bar-26-record-sales.png,6,"2 × Sauvignon Blanc 12:20 · Card MWK 8,000",toast,,15,681,360,54,30,1362,720,108
+26,/bar/sales,bar-26-record-sales.png,7,Hub,nav,/bar,8,765,92,48,16,1530,184,96
+26,/bar/sales,bar-26-record-sales.png,8,Stock,nav,/bar/stock,102,765,92,48,204,1530,184,96
+26,/bar/sales,bar-26-record-sales.png,9,Sales,nav,/bar/sales,196,765,92,48,392,1530,184,96
+26,/bar/sales,bar-26-record-sales.png,10,Reports,nav,/bar/reports,290,765,92,48,580,1530,184,96
+27,/bar/reports,bar-27-bar-daily-report.png,1,Back to /bar,nav,/bar,14,11,34,34,28,22,68,68
+27,/bar/reports,bar-27-bar-daily-report.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+27,/bar/reports,bar-27-bar-daily-report.png,3,Manager sign-off Variance is within tolerance. Send the ledger to the ,toast,,14,713,362,59,28,1426,724,118
+27,/bar/reports,bar-27-bar-daily-report.png,4,Hub,nav,/bar,8,800,92,48,16,1600,184,96
+27,/bar/reports,bar-27-bar-daily-report.png,5,Stock,nav,/bar/stock,102,800,92,48,204,1600,184,96
+27,/bar/reports,bar-27-bar-daily-report.png,6,Sales,nav,/bar/sales,196,800,92,48,392,1600,184,96
+27,/bar/reports,bar-27-bar-daily-report.png,7,Reports,nav,/bar/reports,290,800,92,48,580,1600,184,96
+28,/kitchen,kitchen-28-kitchen-orders.png,1,Notifications,toast,,342,11,34,34,684,22,68,68
+28,/kitchen,kitchen-28-kitchen-orders.png,2,Bump,toast,,300,535,63,27,600,1070,126,54
+28,/kitchen,kitchen-28-kitchen-orders.png,3,Bump,toast,,300,696,63,27,600,1392,126,54
+28,/kitchen,kitchen-28-kitchen-orders.png,4,Bump,toast,,300,847,63,27,600,1694,126,54
+28,/kitchen,kitchen-28-kitchen-orders.png,5,Open kitchen stock,nav,/kitchen/stock,14,898,362,59,28,1796,724,118
+28,/kitchen,kitchen-28-kitchen-orders.png,6,Orders,nav,/kitchen,8,986,92,48,16,1972,184,96
+28,/kitchen,kitchen-28-kitchen-orders.png,7,Stock,nav,/kitchen/stock,102,986,92,48,204,1972,184,96
+28,/kitchen,kitchen-28-kitchen-orders.png,8,Recipes,nav,/kitchen/recipes,196,986,92,48,392,1972,184,96
+28,/kitchen,kitchen-28-kitchen-orders.png,9,Reports,nav,/kitchen/reports,290,986,92,48,580,1972,184,96
+29,/kitchen/stock,kitchen-29-kitchen-stock.png,1,Back to /kitchen,nav,/kitchen,14,11,34,34,28,22,68,68
+29,/kitchen/stock,kitchen-29-kitchen-stock.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+29,/kitchen/stock,kitchen-29-kitchen-stock.png,3,Update maize flour,modal,add-ingredient,15,230,360,55,30,460,720,110
+29,/kitchen/stock,kitchen-29-kitchen-stock.png,4,Update tilapia,modal,add-ingredient,15,285,360,55,30,570,720,110
+29,/kitchen/stock,kitchen-29-kitchen-stock.png,5,Update chicken,modal,add-ingredient,15,340,360,55,30,680,720,110
+29,/kitchen/stock,kitchen-29-kitchen-stock.png,6,Update cooking oil,modal,add-ingredient,15,395,360,55,30,790,720,110
+29,/kitchen/stock,kitchen-29-kitchen-stock.png,7,Update potatoes,modal,add-ingredient,15,450,360,55,30,900,720,110
+29,/kitchen/stock,kitchen-29-kitchen-stock.png,8,Update tomatoes,modal,add-ingredient,15,505,360,54,30,1010,720,108
+29,/kitchen/stock,kitchen-29-kitchen-stock.png,9,Add raw ingredient,modal,add-ingredient,26,639,338,40,52,1278,676,80
+29,/kitchen/stock,kitchen-29-kitchen-stock.png,10,Orders,nav,/kitchen,8,791,92,48,16,1582,184,96
+29,/kitchen/stock,kitchen-29-kitchen-stock.png,11,Stock,nav,/kitchen/stock,102,791,92,48,204,1582,184,96
+29,/kitchen/stock,kitchen-29-kitchen-stock.png,12,Recipes,nav,/kitchen/recipes,196,791,92,48,392,1582,184,96
+29,/kitchen/stock,kitchen-29-kitchen-stock.png,13,Reports,nav,/kitchen/reports,290,791,92,48,580,1582,184,96
+30,/kitchen/recipes,kitchen-30-recipe-bom-costing.png,1,Back to /kitchen,nav,/kitchen,14,11,34,34,28,22,68,68
+30,/kitchen/recipes,kitchen-30-recipe-bom-costing.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+30,/kitchen/recipes,kitchen-30-recipe-bom-costing.png,3,Nsima & Stewed Chicken Flour 0.35 kg · chicken 0.25 bird · tomato 0.15,toast,,15,230,360,55,30,460,720,110
+30,/kitchen/recipes,kitchen-30-recipe-bom-costing.png,4,Grilled Chambo Tilapia 1 pc · oil & spices 0.08 L · salad 0.1 kg Cost ,toast,,15,285,360,55,30,570,720,110
+30,/kitchen/recipes,kitchen-30-recipe-bom-costing.png,5,Crispy Chips Potatoes 0.45 kg · oil 0.1 L · sauce 0.05 L Cost 780,toast,,15,340,360,55,30,680,720,110
+30,/kitchen/recipes,kitchen-30-recipe-bom-costing.png,6,Beef Tenderloin Beef 0.35 kg · potatoes 0.3 kg · butter & herbs 0.05 k,toast,,15,395,360,54,30,790,720,108
+30,/kitchen/recipes,kitchen-30-recipe-bom-costing.png,7,Orders,nav,/kitchen,8,737,92,48,16,1474,184,96
+30,/kitchen/recipes,kitchen-30-recipe-bom-costing.png,8,Stock,nav,/kitchen/stock,102,737,92,48,204,1474,184,96
+30,/kitchen/recipes,kitchen-30-recipe-bom-costing.png,9,Recipes,nav,/kitchen/recipes,196,737,92,48,392,1474,184,96
+30,/kitchen/recipes,kitchen-30-recipe-bom-costing.png,10,Reports,nav,/kitchen/reports,290,737,92,48,580,1474,184,96
+31,/kitchen/reports,kitchen-31-kitchen-shift-report.png,1,Back to /kitchen,nav,/kitchen,14,11,34,34,28,22,68,68
+31,/kitchen/reports,kitchen-31-kitchen-shift-report.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+31,/kitchen/reports,kitchen-31-kitchen-shift-report.png,3,Handover Send the closing count to the evening chef and the manager co,toast,,14,574,362,59,28,1148,724,118
+31,/kitchen/reports,kitchen-31-kitchen-shift-report.png,4,Orders,nav,/kitchen,8,662,92,48,16,1324,184,96
+31,/kitchen/reports,kitchen-31-kitchen-shift-report.png,5,Stock,nav,/kitchen/stock,102,662,92,48,204,1324,184,96
+31,/kitchen/reports,kitchen-31-kitchen-shift-report.png,6,Recipes,nav,/kitchen/recipes,196,662,92,48,392,1324,184,96
+31,/kitchen/reports,kitchen-31-kitchen-shift-report.png,7,Reports,nav,/kitchen/reports,290,662,92,48,580,1324,184,96
+32,/manager,manager-32-executive-desk.png,1,Notifications,toast,,342,11,34,34,684,22,68,68
+32,/manager,manager-32-executive-desk.png,2,Open consolidated report,nav,/manager/reports,293,554,81,15,586,1108,162,30
+32,/manager,manager-32-executive-desk.png,3,Front desk report,nav,/manager/reports,15,580,360,55,30,1160,720,110
+32,/manager,manager-32-executive-desk.png,4,Restaurant report,nav,/manager/reports,15,635,360,55,30,1270,720,110
+32,/manager,manager-32-executive-desk.png,5,Bar report,nav,/manager/reports,15,690,360,55,30,1380,720,110
+32,/manager,manager-32-executive-desk.png,6,Kitchen report,nav,/manager/reports,15,745,360,54,30,1490,720,108
+32,/manager,manager-32-executive-desk.png,7,Shift audits,nav,/manager/audits,14,838,116,74,28,1676,232,148
+32,/manager,manager-32-executive-desk.png,8,Consolidated report,nav,/manager/reports,137,838,116,74,274,1676,232,148
+32,/manager,manager-32-executive-desk.png,9,Add shift note,modal,shift-close,260,838,116,74,520,1676,232,148
+32,/manager,manager-32-executive-desk.png,10,Review pending approvals,nav,/manager/audits,14,924,362,59,28,1848,724,118
+32,/manager,manager-32-executive-desk.png,11,Overview,nav,/manager,8,1012,123,48,16,2024,246,96
+32,/manager,manager-32-executive-desk.png,12,Audits,nav,/manager/audits,133,1012,123,48,266,2024,246,96
+32,/manager,manager-32-executive-desk.png,13,Consolidated,nav,/manager/reports,259,1012,123,48,518,2024,246,96
+33,/manager/audits,manager-33-shift-audits-approvals.png,1,Back to /manager,nav,/manager,14,11,34,34,28,22,68,68
+33,/manager/audits,manager-33-shift-audits-approvals.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+33,/manager/audits,manager-33-shift-audits-approvals.png,3,Review bar shift close,modal,audit-review,15,422,360,55,30,844,720,110
+33,/manager/audits,manager-33-shift-audits-approvals.png,4,Review folio adjustment,modal,audit-review,15,477,360,55,30,954,720,110
+33,/manager/audits,manager-33-shift-audits-approvals.png,5,Review stock variance,modal,audit-review,15,532,360,54,30,1064,720,108
+33,/manager/audits,manager-33-shift-audits-approvals.png,6,Overview,nav,/manager,8,829,123,48,16,1658,246,96
+33,/manager/audits,manager-33-shift-audits-approvals.png,7,Audits,nav,/manager/audits,133,829,123,48,266,1658,246,96
+33,/manager/audits,manager-33-shift-audits-approvals.png,8,Consolidated,nav,/manager/reports,259,829,123,48,518,1658,246,96
+34,/manager/reports,manager-34-consolidated-report.png,1,Back to /manager,nav,/manager,14,11,34,34,28,22,68,68
+34,/manager/reports,manager-34-consolidated-report.png,2,Notifications,toast,,342,11,34,34,684,22,68,68
+34,/manager/reports,manager-34-consolidated-report.png,3,Board pack Export the consolidated report as a signed PDF for the week,toast,,14,728,362,59,28,1456,724,118
+34,/manager/reports,manager-34-consolidated-report.png,4,Overview,nav,/manager,8,816,123,48,16,1632,246,96
+34,/manager/reports,manager-34-consolidated-report.png,5,Audits,nav,/manager/audits,133,816,123,48,266,1632,246,96
+34,/manager/reports,manager-34-consolidated-report.png,6,Consolidated,nav,/manager/reports,259,816,123,48,518,1632,246,96

@@ -1,0 +1,11 @@
+label,action,target,x,y,w,h
+Back to /restaurant,nav,/restaurant,14,11,34,34
+Notifications,toast,,342,11,34,34
+New docket,modal,new-docket,300,400,74,15
+Bump,toast,,300,529,63,27
+Bump,toast,,300,680,63,27
+Bump,toast,,300,831,63,27
+Hub,nav,/restaurant,8,970,92,48
+Menu,nav,/restaurant/menu,102,970,92,48
+Dockets,nav,/restaurant/dockets,196,970,92,48
+Reports,nav,/restaurant/reports,290,970,92,48

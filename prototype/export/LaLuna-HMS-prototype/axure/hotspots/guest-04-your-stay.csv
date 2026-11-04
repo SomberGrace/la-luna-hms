@@ -1,0 +1,12 @@
+label,action,target,x,y,w,h
+Notifications,toast,,342,11,34,34
+In-room dining,nav,/guest/dining,14,421,177,92
+My bill,nav,/guest/folio,199,421,177,92
+Concierge,nav,/guest/services,14,521,177,92
+Resort guide,nav,/guest/guide,199,521,177,92
+Extra bath towels Requested 18:42 · Housekeeping On the way,toast,,15,652,360,54
+View WiFi details,modal,wifi,14,719,362,52
+Stay,nav,/guest,8,800,92,48
+Dining,nav,/guest/dining,102,800,92,48
+My Bill,nav,/guest/folio,196,800,92,48
+Services,nav,/guest/services,290,800,92,48

@@ -1,0 +1,520 @@
+{
+  "generatedAt": "2026-11-02T23:45:46.955Z",
+  "screens": [
+    {
+      "no": 1,
+      "route": "/",
+      "title": "Station Sign In",
+      "dept": "portal",
+      "file": "screens/portal-01-station-sign-in.png",
+      "width": 780,
+      "height": 1308,
+      "hotspots": 7
+    },
+    {
+      "no": 2,
+      "route": "/book",
+      "title": "Book Your Stay",
+      "dept": "book",
+      "file": "screens/book-02-book-your-stay.png",
+      "width": 780,
+      "height": 1918,
+      "hotspots": 8
+    },
+    {
+      "no": 3,
+      "route": "/book/login",
+      "title": "Guest Account",
+      "dept": "book",
+      "file": "screens/book-03-guest-account.png",
+      "width": 780,
+      "height": 1160,
+      "hotspots": 5
+    },
+    {
+      "no": 4,
+      "route": "/guest",
+      "title": "Your Stay",
+      "dept": "guest",
+      "file": "screens/guest-04-your-stay.png",
+      "width": 780,
+      "height": 1716,
+      "hotspots": 11
+    },
+    {
+      "no": 5,
+      "route": "/guest/dining",
+      "title": "In-Room Dining",
+      "dept": "guest",
+      "file": "screens/guest-05-in-room-dining.png",
+      "width": 780,
+      "height": 2064,
+      "hotspots": 19
+    },
+    {
+      "no": 6,
+      "route": "/guest/folio",
+      "title": "My Room Statement",
+      "dept": "guest",
+      "file": "screens/guest-06-my-room-statement.png",
+      "width": 780,
+      "height": 1376,
+      "hotspots": 8
+    },
+    {
+      "no": 7,
+      "route": "/guest/services",
+      "title": "Concierge & Requests",
+      "dept": "guest",
+      "file": "screens/guest-07-concierge-requests.png",
+      "width": 780,
+      "height": 1638,
+      "hotspots": 15
+    },
+    {
+      "no": 8,
+      "route": "/guest/guide",
+      "title": "Resort Guide & Directory",
+      "dept": "guest",
+      "file": "screens/guest-08-resort-guide-directory.png",
+      "width": 780,
+      "height": 2356,
+      "hotspots": 19
+    },
+    {
+      "no": 9,
+      "route": "/frontdesk",
+      "title": "Front Desk Hub",
+      "dept": "frontdesk",
+      "file": "screens/frontdesk-09-front-desk-hub.png",
+      "width": 780,
+      "height": 2312,
+      "hotspots": 22
+    },
+    {
+      "no": 10,
+      "route": "/frontdesk/rooms",
+      "title": "Room Inventory",
+      "dept": "frontdesk",
+      "file": "screens/frontdesk-10-room-inventory.png",
+      "width": 780,
+      "height": 1718,
+      "hotspots": 20
+    },
+    {
+      "no": 11,
+      "route": "/frontdesk/walkin",
+      "title": "Rapid Walk-In",
+      "dept": "frontdesk",
+      "file": "screens/frontdesk-11-rapid-walk-in.png",
+      "width": 780,
+      "height": 1632,
+      "hotspots": 8
+    },
+    {
+      "no": 12,
+      "route": "/frontdesk/checkin",
+      "title": "Reservation Check-In",
+      "dept": "frontdesk",
+      "file": "screens/frontdesk-12-reservation-check-in.png",
+      "width": 780,
+      "height": 1464,
+      "hotspots": 11
+    },
+    {
+      "no": 13,
+      "route": "/frontdesk/folio",
+      "title": "Guest Billing Folio",
+      "dept": "frontdesk",
+      "file": "screens/frontdesk-13-guest-billing-folio.png",
+      "width": 780,
+      "height": 1636,
+      "hotspots": 10
+    },
+    {
+      "no": 14,
+      "route": "/frontdesk/payments",
+      "title": "Payment Terminal",
+      "dept": "frontdesk",
+      "file": "screens/frontdesk-14-payment-terminal.png",
+      "width": 780,
+      "height": 1430,
+      "hotspots": 10
+    },
+    {
+      "no": 15,
+      "route": "/frontdesk/checkout",
+      "title": "Check-Out Terminal",
+      "dept": "frontdesk",
+      "file": "screens/frontdesk-15-check-out-terminal.png",
+      "width": 780,
+      "height": 1624,
+      "hotspots": 8
+    },
+    {
+      "no": 16,
+      "route": "/frontdesk/extension",
+      "title": "Stay Extension",
+      "dept": "frontdesk",
+      "file": "screens/frontdesk-16-stay-extension.png",
+      "width": 780,
+      "height": 1236,
+      "hotspots": 8
+    },
+    {
+      "no": 17,
+      "route": "/frontdesk/housekeeping",
+      "title": "Housekeeping",
+      "dept": "frontdesk",
+      "file": "screens/frontdesk-17-housekeeping.png",
+      "width": 780,
+      "height": 1568,
+      "hotspots": 10
+    },
+    {
+      "no": 18,
+      "route": "/frontdesk/offline",
+      "title": "Offline Sync & Queue",
+      "dept": "frontdesk",
+      "file": "screens/frontdesk-18-offline-sync-queue.png",
+      "width": 780,
+      "height": 1864,
+      "hotspots": 11
+    },
+    {
+      "no": 19,
+      "route": "/frontdesk/reports",
+      "title": "Reception Reports",
+      "dept": "frontdesk",
+      "file": "screens/frontdesk-19-reception-reports.png",
+      "width": 780,
+      "height": 1814,
+      "hotspots": 8
+    },
+    {
+      "no": 20,
+      "route": "/restaurant",
+      "title": "Restaurant Hub",
+      "dept": "restaurant",
+      "file": "screens/restaurant-20-restaurant-hub.png",
+      "width": 780,
+      "height": 1884,
+      "hotspots": 14
+    },
+    {
+      "no": 21,
+      "route": "/restaurant/menu",
+      "title": "Menu Items",
+      "dept": "restaurant",
+      "file": "screens/restaurant-21-menu-items.png",
+      "width": 780,
+      "height": 1948,
+      "hotspots": 18
+    },
+    {
+      "no": 22,
+      "route": "/restaurant/dockets",
+      "title": "Dockets",
+      "dept": "restaurant",
+      "file": "screens/restaurant-22-dockets.png",
+      "width": 780,
+      "height": 2056,
+      "hotspots": 10
+    },
+    {
+      "no": 23,
+      "route": "/restaurant/reports",
+      "title": "Restaurant Report",
+      "dept": "restaurant",
+      "file": "screens/restaurant-23-restaurant-report.png",
+      "width": 780,
+      "height": 1782,
+      "hotspots": 7
+    },
+    {
+      "no": 24,
+      "route": "/bar",
+      "title": "Bar Hub",
+      "dept": "bar",
+      "file": "screens/bar-24-bar-hub.png",
+      "width": 780,
+      "height": 1580,
+      "hotspots": 11
+    },
+    {
+      "no": 25,
+      "route": "/bar/stock",
+      "title": "Stock Audit",
+      "dept": "bar",
+      "file": "screens/bar-25-stock-audit.png",
+      "width": 780,
+      "height": 1778,
+      "hotspots": 17
+    },
+    {
+      "no": 26,
+      "route": "/bar/sales",
+      "title": "Record Sales",
+      "dept": "bar",
+      "file": "screens/bar-26-record-sales.png",
+      "width": 780,
+      "height": 1646,
+      "hotspots": 10
+    },
+    {
+      "no": 27,
+      "route": "/bar/reports",
+      "title": "Bar Daily Report",
+      "dept": "bar",
+      "file": "screens/bar-27-bar-daily-report.png",
+      "width": 780,
+      "height": 1716,
+      "hotspots": 7
+    },
+    {
+      "no": 28,
+      "route": "/kitchen",
+      "title": "Kitchen Orders",
+      "dept": "kitchen",
+      "file": "screens/kitchen-28-kitchen-orders.png",
+      "width": 780,
+      "height": 2088,
+      "hotspots": 9
+    },
+    {
+      "no": 29,
+      "route": "/kitchen/stock",
+      "title": "Kitchen Stock",
+      "dept": "kitchen",
+      "file": "screens/kitchen-29-kitchen-stock.png",
+      "width": 780,
+      "height": 1698,
+      "hotspots": 13
+    },
+    {
+      "no": 30,
+      "route": "/kitchen/recipes",
+      "title": "Recipe BOM Costing",
+      "dept": "kitchen",
+      "file": "screens/kitchen-30-recipe-bom-costing.png",
+      "width": 780,
+      "height": 1590,
+      "hotspots": 10
+    },
+    {
+      "no": 31,
+      "route": "/kitchen/reports",
+      "title": "Kitchen Shift Report",
+      "dept": "kitchen",
+      "file": "screens/kitchen-31-kitchen-shift-report.png",
+      "width": 780,
+      "height": 1440,
+      "hotspots": 7
+    },
+    {
+      "no": 32,
+      "route": "/manager",
+      "title": "Executive Desk",
+      "dept": "manager",
+      "file": "screens/manager-32-executive-desk.png",
+      "width": 780,
+      "height": 2140,
+      "hotspots": 13
+    },
+    {
+      "no": 33,
+      "route": "/manager/audits",
+      "title": "Shift Audits & Approvals",
+      "dept": "manager",
+      "file": "screens/manager-33-shift-audits-approvals.png",
+      "width": 780,
+      "height": 1774,
+      "hotspots": 8
+    },
+    {
+      "no": 34,
+      "route": "/manager/reports",
+      "title": "Consolidated Report",
+      "dept": "manager",
+      "file": "screens/manager-34-consolidated-report.png",
+      "width": 780,
+      "height": 1748,
+      "hotspots": 6
+    }
+  ],
+  "popups": [
+    {
+      "no": 1,
+      "id": "book-room",
+      "title": "Book Room 104",
+      "backdrop": "/book",
+      "file": "popups/popup-01-book-room.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 2,
+      "id": "booking-confirmed",
+      "title": "Booking Confirmed",
+      "backdrop": "/book",
+      "file": "popups/popup-02-booking-confirmed.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 3,
+      "id": "room-status",
+      "title": "Room 104",
+      "backdrop": "/frontdesk/rooms",
+      "file": "popups/popup-03-room-status.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 4,
+      "id": "walkin-success",
+      "title": "Registration Complete",
+      "backdrop": "/frontdesk/walkin",
+      "file": "popups/popup-04-walkin-success.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 5,
+      "id": "checkin-success",
+      "title": "Check-In Complete",
+      "backdrop": "/frontdesk/checkin",
+      "file": "popups/popup-05-checkin-success.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 6,
+      "id": "payment-receipt",
+      "title": "Payment Receipt",
+      "backdrop": "/frontdesk/payments",
+      "file": "popups/popup-06-payment-receipt.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 7,
+      "id": "checkout-success",
+      "title": "Check-Out Successful",
+      "backdrop": "/frontdesk/checkout",
+      "file": "popups/popup-07-checkout-success.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 8,
+      "id": "extension-success",
+      "title": "Stay Extended",
+      "backdrop": "/frontdesk/extension",
+      "file": "popups/popup-08-extension-success.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 9,
+      "id": "add-menu-item",
+      "title": "Add Menu Item",
+      "backdrop": "/restaurant/menu",
+      "file": "popups/popup-09-add-menu-item.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 10,
+      "id": "new-docket",
+      "title": "New Docket",
+      "backdrop": "/restaurant/dockets",
+      "file": "popups/popup-10-new-docket.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 11,
+      "id": "add-bar-item",
+      "title": "Update Bar Stock",
+      "backdrop": "/bar/stock",
+      "file": "popups/popup-11-add-bar-item.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 12,
+      "id": "add-ingredient",
+      "title": "Add Raw Ingredient",
+      "backdrop": "/kitchen/stock",
+      "file": "popups/popup-12-add-ingredient.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 13,
+      "id": "guest-tray",
+      "title": "In-Room Dining Tray",
+      "backdrop": "/guest/dining",
+      "file": "popups/popup-13-guest-tray.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 14,
+      "id": "guest-request",
+      "title": "Concierge Request",
+      "backdrop": "/guest/services",
+      "file": "popups/popup-14-guest-request.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 15,
+      "id": "wifi",
+      "title": "Hotel WiFi",
+      "backdrop": "/guest",
+      "file": "popups/popup-15-wifi.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 16,
+      "id": "guest-request-success",
+      "title": "Request Sent",
+      "backdrop": "/guest/services",
+      "file": "popups/popup-16-guest-request-success.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 17,
+      "id": "audit-review",
+      "title": "Review Bar Shift Close",
+      "backdrop": "/manager/audits",
+      "file": "popups/popup-17-audit-review.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 18,
+      "id": "shift-close",
+      "title": "Close Shift",
+      "backdrop": "/frontdesk/reports",
+      "file": "popups/popup-18-shift-close.png",
+      "width": 780,
+      "height": 1688
+    },
+    {
+      "no": 19,
+      "id": "sale-recorded",
+      "title": "Sale Recorded",
+      "backdrop": "/bar/sales",
+      "file": "popups/popup-19-sale-recorded.png",
+      "width": 780,
+      "height": 1688
+    }
+  ],
+  "hotspots": 378,
+  "errors": []
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>La Luna HMS · Prototype</title>
+  <link rel="stylesheet" href="assets/css/landing.css">
+</head>
+<body>
+  <div class="landing-bg"><div class="grid"></div></div>
+
+  <div class="landing-shell">
+    <header class="landing-nav">
+      <div class="nav-brand">
+        <span class="nav-logo"><i class="ph ph-moon" aria-hidden="true"></i></span>
+        <span>
+          <span class="nav-name">LA LUNA</span>
+          <span class="nav-sub">HMS · Prototype</span>
+        </span>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link keep" href="prototype.html?map=1">Screen map</a>
+        <a class="nav-link" href="axure/AXURE-BUILD-GUIDE.md">Axure kit</a>
+        <a class="nav-link" href="prototype.html">Launch <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+      </nav>
+    </header>
+
+    <main class="landing-main">
+      <section class="landing-copy">
+        <span class="eyebrow"><i class="ph ph-sparkle" aria-hidden="true"></i> Degree final project · Interactive prototype</span>
+        <h1>La Luna <em>HMS</em><small>Hotel management, end to end</small></h1>
+        <p class="lede">
+          A clickable walkthrough of the whole property — front desk, restaurant, bar, kitchen,
+          management and the guest portal. Every screen navigates, every <strong>popup opens</strong>,
+          and the visuals mirror the <strong>running SvelteKit app</strong>.
+        </p>
+        <div class="landing-actions">
+          <a class="cta primary" href="prototype.html">Enter prototype <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+          <a class="cta" href="prototype.html?map=1"><i class="ph ph-squares-four" aria-hidden="true"></i> Open screen map</a>
+        </div>
+        <div class="landing-meta">
+          <div class="meta-item"><b>34</b><span>Screens</span></div>
+          <div class="meta-item"><b>7</b><span>Workstations</span></div>
+          <div class="meta-item"><b>19</b><span>Popups</span></div>
+          <div class="meta-item"><b>1</b><span>Clickable file</span></div>
+        </div>
+        <div class="feature-row">
+          <div class="feature"><i class="ph ph-arrow-right" aria-hidden="true"></i><h3>Real navigation</h3><p>Hash routes, back buttons and deep links for every screen.</p></div>
+          <div class="feature"><i class="ph ph-cursor-click" aria-hidden="true"></i><h3>Hotspot reveal</h3><p>Press H to outline every clickable target on the screen.</p></div>
+          <div class="feature"><i class="ph ph-cube" aria-hidden="true"></i><h3>Axure kit</h3><p>High-res screens, hotspot map and build guide for the .rp.</p></div>
+        </div>
+      </section>
+
+      <section class="landing-preview" aria-label="Live prototype preview">
+        <div class="preview-glow"></div>
+        <div class="preview-phone">
+          <div class="preview-screen">
+            <iframe src="prototype.html?capture=1&screen=/frontdesk" title="Front desk preview" scrolling="no" loading="eager"></iframe>
+            <div class="preview-fade"></div>
+          </div>
+          <span class="preview-badge"><span class="pulse"></span> Live preview</span>
+        </div>
+        <span class="preview-caption">Front desk · mobile workstation</span>
+      </section>
+    </main>
+
+    <footer class="landing-foot">
+      <span>La Luna Hotel &amp; Resort · Prototype 1.0 · Built with SvelteKit, Go and PostgreSQL</span>
+      <span>Open <a href="prototype.html">prototype.html</a> or read the <a href="axure/AXURE-BUILD-GUIDE.md">Axure build guide</a>.</span>
+    </footer>
+  </div>
+</body>
+</html>

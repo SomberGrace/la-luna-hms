@@ -1,0 +1,9 @@
+label,action,target,x,y,w,h
+Back to /frontdesk,nav,/frontdesk,14,11,34,34
+Notifications,toast,,342,11,34,34
+Complete walk-in check-in,modal,walkin-success,28,584,334,40
+Hub,nav,/frontdesk,8,758,73,48
+Rooms,nav,/frontdesk/rooms,83,758,73,48
+Walk-In,nav,/frontdesk/walkin,158,758,73,48
+Folio,nav,/frontdesk/folio,234,758,73,48
+Checkout,nav,/frontdesk/checkout,309,758,73,48

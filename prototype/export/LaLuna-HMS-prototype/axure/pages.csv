@@ -1,0 +1,35 @@
+no,route,title,dept,back,image,width,height,hotspots
+1,/,Station Sign In,Portal,,screens/portal-01-station-sign-in.png,390,654,7
+2,/book,Book Your Stay,Booking,,screens/book-02-book-your-stay.png,390,959,8
+3,/book/login,Guest Account,Booking,/book,screens/book-03-guest-account.png,390,580,5
+4,/guest,Your Stay,Guest,,screens/guest-04-your-stay.png,390,858,11
+5,/guest/dining,In-Room Dining,Guest,/guest,screens/guest-05-in-room-dining.png,390,1032,19
+6,/guest/folio,My Room Statement,Guest,/guest,screens/guest-06-my-room-statement.png,390,688,8
+7,/guest/services,Concierge & Requests,Guest,/guest,screens/guest-07-concierge-requests.png,390,819,15
+8,/guest/guide,Resort Guide & Directory,Guest,/guest,screens/guest-08-resort-guide-directory.png,390,1178,19
+9,/frontdesk,Front Desk Hub,Front Desk,,screens/frontdesk-09-front-desk-hub.png,390,1156,22
+10,/frontdesk/rooms,Room Inventory,Front Desk,/frontdesk,screens/frontdesk-10-room-inventory.png,390,859,20
+11,/frontdesk/walkin,Rapid Walk-In,Front Desk,/frontdesk,screens/frontdesk-11-rapid-walk-in.png,390,816,8
+12,/frontdesk/checkin,Reservation Check-In,Front Desk,/frontdesk,screens/frontdesk-12-reservation-check-in.png,390,732,11
+13,/frontdesk/folio,Guest Billing Folio,Front Desk,/frontdesk,screens/frontdesk-13-guest-billing-folio.png,390,818,10
+14,/frontdesk/payments,Payment Terminal,Front Desk,/frontdesk,screens/frontdesk-14-payment-terminal.png,390,715,10
+15,/frontdesk/checkout,Check-Out Terminal,Front Desk,/frontdesk,screens/frontdesk-15-check-out-terminal.png,390,812,8
+16,/frontdesk/extension,Stay Extension,Front Desk,/frontdesk,screens/frontdesk-16-stay-extension.png,390,618,8
+17,/frontdesk/housekeeping,Housekeeping,Front Desk,/frontdesk,screens/frontdesk-17-housekeeping.png,390,784,10
+18,/frontdesk/offline,Offline Sync & Queue,Front Desk,/frontdesk,screens/frontdesk-18-offline-sync-queue.png,390,932,11
+19,/frontdesk/reports,Reception Reports,Front Desk,/frontdesk,screens/frontdesk-19-reception-reports.png,390,907,8
+20,/restaurant,Restaurant Hub,Restaurant,,screens/restaurant-20-restaurant-hub.png,390,942,14
+21,/restaurant/menu,Menu Items,Restaurant,/restaurant,screens/restaurant-21-menu-items.png,390,974,18
+22,/restaurant/dockets,Dockets,Restaurant,/restaurant,screens/restaurant-22-dockets.png,390,1028,10
+23,/restaurant/reports,Restaurant Report,Restaurant,/restaurant,screens/restaurant-23-restaurant-report.png,390,891,7
+24,/bar,Bar Hub,Bar,,screens/bar-24-bar-hub.png,390,790,11
+25,/bar/stock,Stock Audit,Bar,/bar,screens/bar-25-stock-audit.png,390,889,17
+26,/bar/sales,Record Sales,Bar,/bar,screens/bar-26-record-sales.png,390,823,10
+27,/bar/reports,Bar Daily Report,Bar,/bar,screens/bar-27-bar-daily-report.png,390,858,7
+28,/kitchen,Kitchen Orders,Kitchen,,screens/kitchen-28-kitchen-orders.png,390,1044,9
+29,/kitchen/stock,Kitchen Stock,Kitchen,/kitchen,screens/kitchen-29-kitchen-stock.png,390,849,13
+30,/kitchen/recipes,Recipe BOM Costing,Kitchen,/kitchen,screens/kitchen-30-recipe-bom-costing.png,390,795,10
+31,/kitchen/reports,Kitchen Shift Report,Kitchen,/kitchen,screens/kitchen-31-kitchen-shift-report.png,390,720,7
+32,/manager,Executive Desk,Manager,,screens/manager-32-executive-desk.png,390,1070,13
+33,/manager/audits,Shift Audits & Approvals,Manager,/manager,screens/manager-33-shift-audits-approvals.png,390,887,8
+34,/manager/reports,Consolidated Report,Manager,/manager,screens/manager-34-consolidated-report.png,390,874,6

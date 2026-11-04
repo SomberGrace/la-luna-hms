@@ -1,0 +1,14 @@
+label,action,target,x,y,w,h
+Back to /kitchen,nav,/kitchen,14,11,34,34
+Notifications,toast,,342,11,34,34
+Update maize flour,modal,add-ingredient,15,230,360,55
+Update tilapia,modal,add-ingredient,15,285,360,55
+Update chicken,modal,add-ingredient,15,340,360,55
+Update cooking oil,modal,add-ingredient,15,395,360,55
+Update potatoes,modal,add-ingredient,15,450,360,55
+Update tomatoes,modal,add-ingredient,15,505,360,54
+Add raw ingredient,modal,add-ingredient,26,639,338,40
+Orders,nav,/kitchen,8,791,92,48
+Stock,nav,/kitchen/stock,102,791,92,48
+Recipes,nav,/kitchen/recipes,196,791,92,48
+Reports,nav,/kitchen/reports,290,791,92,48

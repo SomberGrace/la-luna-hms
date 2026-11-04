@@ -1,0 +1,20 @@
+label,action,target,x,y,w,h
+Back to /guest,nav,/guest,14,11,34,34
+Notifications,toast,,342,11,34,34
+All,toast,,14,230,33,25
+Mains,toast,,53,230,48,25
+Breakfast,toast,,108,230,64,25
+Snacks,toast,,177,230,54,25
+Drinks,toast,,237,230,50,25
+Add Nsima,tray,,331,297,32,32
+Add Tilapia,tray,,331,392,32,32
+Add Tenderloin,tray,,331,487,32,32
+Add Mandasi,tray,,331,576,32,32
+Add Juice,tray,,331,658,32,32
+Add Gin & Tonic,tray,,331,741,32,32
+Review dining tray,modal,guest-tray,14,808,362,44
+"Tilapia & Mango Juice Yesterday 19:20 · Delivered MWK 6,000",toast,,15,891,360,54
+Stay,nav,/guest,8,975,92,48
+Dining,nav,/guest/dining,102,975,92,48
+My Bill,nav,/guest/folio,196,975,92,48
+Services,nav,/guest/services,290,975,92,48

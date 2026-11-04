@@ -1,0 +1,15 @@
+label,action,target,x,y,w,h
+Notifications,toast,,342,11,34,34
+View all dockets,nav,/restaurant/dockets,319,400,55,15
+Open docket 0184,nav,/restaurant/dockets,15,426,360,55
+Open docket 0183,nav,/restaurant/dockets,15,481,360,55
+Open docket 0182,nav,/restaurant/dockets,15,536,360,54
+New docket,modal,new-docket,14,629,116,74
+Menu,nav,/restaurant/menu,137,629,116,74
+Dockets,nav,/restaurant/dockets,260,629,116,74
+Restaurant reports,nav,/restaurant/reports,14,710,116,74
+Open kitchen stock,nav,/kitchen/stock,14,796,362,59
+Hub,nav,/restaurant,8,884,92,48
+Menu,nav,/restaurant/menu,102,884,92,48
+Dockets,nav,/restaurant/dockets,196,884,92,48
+Reports,nav,/restaurant/reports,290,884,92,48

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../lib/assets/fonts/Inter.ttf') format('truetype');
+  font-weight: 100 1000; /* Declares the full variable weight range */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Oxanium';
+  src: url('../lib/assets/fonts/Oxanium.ttf') format('truetype');
+  font-weight: 100 1000; /* Declares the full variable weight range */
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-custom: 'Inter', 'Oxanium', sans-serif;
+}

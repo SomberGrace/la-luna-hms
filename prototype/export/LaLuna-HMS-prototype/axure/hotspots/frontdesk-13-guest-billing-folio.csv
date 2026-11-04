@@ -1,0 +1,11 @@
+label,action,target,x,y,w,h
+Back to /frontdesk,nav,/frontdesk,14,11,34,34
+Notifications,toast,,342,11,34,34
+Post payment,nav,/frontdesk/payments,14,471,116,74
+Extend stay,nav,/frontdesk/extension,137,471,116,74
+Check out room 104,nav,/frontdesk/checkout,260,471,116,74
+Hub,nav,/frontdesk,8,761,73,48
+Rooms,nav,/frontdesk/rooms,83,761,73,48
+Walk-In,nav,/frontdesk/walkin,158,761,73,48
+Folio,nav,/frontdesk/folio,234,761,73,48
+Checkout,nav,/frontdesk/checkout,309,761,73,48

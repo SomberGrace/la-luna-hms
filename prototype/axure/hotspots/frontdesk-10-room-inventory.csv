@@ -1,0 +1,21 @@
+label,action,target,x,y,w,h
+Back to /frontdesk,nav,/frontdesk,14,11,34,34
+Notifications,toast,,342,11,34,34
+All 12,toast,,14,230,45,25
+Available 2,toast,,65,230,69,25
+Occupied 9,toast,,140,230,72,25
+Out of service 1,toast,,218,230,89,25
+Change status for room 101,modal,room-status,14,269,177,80
+Change status for room 102,modal,room-status,199,269,177,80
+Change status for room 103,modal,room-status,14,357,177,80
+Change status for room 104,modal,room-status,199,357,177,80
+Change status for room 201,modal,room-status,14,445,177,80
+Change status for room 205,modal,room-status,199,445,177,80
+Change status for room 301,modal,room-status,14,533,177,80
+Change status for room 304,modal,room-status,199,533,177,80
+Change status for room 401,modal,room-status,14,621,177,80
+Hub,nav,/frontdesk,8,801,73,48
+Rooms,nav,/frontdesk/rooms,83,801,73,48
+Walk-In,nav,/frontdesk/walkin,158,801,73,48
+Folio,nav,/frontdesk/folio,234,801,73,48
+Checkout,nav,/frontdesk/checkout,309,801,73,48

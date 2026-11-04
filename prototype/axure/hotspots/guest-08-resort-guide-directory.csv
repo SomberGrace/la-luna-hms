@@ -1,0 +1,20 @@
+label,action,target,x,y,w,h
+Back to /guest,nav,/guest,14,11,34,34
+Notifications,toast,,342,11,34,34
+In-room dining Daily · 07:00 – 22:00 Ext. 2,toast,,15,256,360,55
+Restaurant Breakfast 07:00 · Dinner 18:30 Ext. 2,toast,,15,311,360,55
+Poolside bar Daily · 11:00 – 23:00 Ext. 1,toast,,15,366,360,55
+Pool & beach Open 06:00 – 19:00 Ext. 0,toast,,15,421,360,54
+"Front Desk Reception Housekeeping, billing and general help Ext. 0",toast,,15,515,360,55
+In-Room Dining Kitchen Orders and dietary questions Ext. 2,toast,,15,570,360,55
+"Housekeeping & Linen Towels, laundry and turndown Ext. 3",toast,,15,625,360,55
+General Manager On Duty Feedback and escalations Ext. 4,toast,,15,680,360,55
+Emergency & First Aid Urgent medical assistance Ext. 9,toast,,15,735,360,54
+"Sunset cruise 17:00 · 90 min · MWK 45,000",toast,,14,828,177,92
+"Snorkel safari 09:00 · 2 hrs · MWK 38,000",toast,,199,828,177,92
+"Village walk 14:00 · 2 hrs · MWK 20,000",toast,,14,928,177,92
+"Birdwatching 06:30 · 2 hrs · MWK 25,000",toast,,199,928,177,92
+Stay,nav,/guest,8,1120,92,48
+Dining,nav,/guest/dining,102,1120,92,48
+My Bill,nav,/guest/folio,196,1120,92,48
+Services,nav,/guest/services,290,1120,92,48

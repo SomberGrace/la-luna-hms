@@ -1,0 +1,11 @@
+label,action,target,x,y,w,h
+Back to /frontdesk,nav,/frontdesk,14,11,34,34
+Notifications,toast,,342,11,34,34
+Room 102 Dirty · Guest departed 10:00 Mark clean,toast,,15,422,360,55
+Room 205 Dirty · Stayover service Mark clean,toast,,15,477,360,55
+Room 201 Inspect · Supervisor assigned Pass,toast,,15,532,360,55
+Hub,nav,/frontdesk,8,726,73,48
+Rooms,nav,/frontdesk/rooms,83,726,73,48
+Walk-In,nav,/frontdesk/walkin,158,726,73,48
+Folio,nav,/frontdesk/folio,234,726,73,48
+Checkout,nav,/frontdesk/checkout,309,726,73,48

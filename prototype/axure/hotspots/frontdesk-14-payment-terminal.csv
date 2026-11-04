@@ -1,0 +1,11 @@
+label,action,target,x,y,w,h
+Back to /frontdesk,nav,/frontdesk,14,11,34,34
+Notifications,toast,,342,11,34,34
+Post payment,modal,payment-receipt,28,425,334,40
+View receipt,modal,payment-receipt,15,518,360,55
+View receipt,modal,payment-receipt,15,573,360,54
+Hub,nav,/frontdesk,8,657,73,48
+Rooms,nav,/frontdesk/rooms,83,657,73,48
+Walk-In,nav,/frontdesk/walkin,158,657,73,48
+Folio,nav,/frontdesk/folio,234,657,73,48
+Checkout,nav,/frontdesk/checkout,309,657,73,48

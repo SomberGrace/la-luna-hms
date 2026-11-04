@@ -1,0 +1,6 @@
+label,action,target,x,y,w,h
+Back to /book,nav,/book,14,11,34,34
+Notifications,toast,,342,11,34,34
+Sign in,toast,,14,230,51,25
+Create account,toast,,71,230,89,25
+Enter guest portal,nav,/guest,28,412,334,40

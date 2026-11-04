@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace "com.lalunahms"
+    compileSdk rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.lalunahms"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        aaptOptions {
+             // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
+             // Default: https://android.googlesource.com/platform/frameworks/base/+/282e181b58cf72b6ca770dc7ca5f91f135444502/tools/aapt/AaptAssets.cpp#61
+            ignoreAssetsPattern '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
+        }
+    }
+    flavorDimensions += "role"
+    productFlavors {
+        guest {
+            dimension "role"
+            applicationIdSuffix ".guest"
+            resValue "string", "app_name", "La Luna Guest"
+            resValue "string", "title_activity_main", "La Luna Guest"
+            resValue "color", "ic_launcher_background", "#B45309"
+        }
+        frontdesk {
+            dimension "role"
+            applicationIdSuffix ".frontdesk"
+            resValue "string", "app_name", "La Luna Front Desk"
+            resValue "string", "title_activity_main", "La Luna Front Desk"
+            resValue "color", "ic_launcher_background", "#D97706"
+        }
+        kitchen {
+            dimension "role"
+            applicationIdSuffix ".kitchen"
+            resValue "string", "app_name", "La Luna Kitchen"
+            resValue "string", "title_activity_main", "La Luna Kitchen"
+            resValue "color", "ic_launcher_background", "#059669"
+        }
+        manager {
+            dimension "role"
+            applicationIdSuffix ".manager"
+            resValue "string", "app_name", "La Luna Manager"
+            resValue "string", "title_activity_main", "La Luna Manager"
+            resValue "color", "ic_launcher_background", "#4F46E5"
+        }
+        restaurant {
+            dimension "role"
+            applicationIdSuffix ".restaurant"
+            resValue "string", "app_name", "La Luna Restaurant"
+            resValue "string", "title_activity_main", "La Luna Restaurant"
+            resValue "color", "ic_launcher_background", "#EA580C"
+        }
+        bar {
+            dimension "role"
+            applicationIdSuffix ".bar"
+            resValue "string", "app_name", "La Luna Bar"
+            resValue "string", "title_activity_main", "La Luna Bar"
+            resValue "color", "ic_launcher_background", "#7E22CE"
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile System.getenv("ANDROID_KEYSTORE_PATH") ? file(System.getenv("ANDROID_KEYSTORE_PATH")) : null
+            storePassword System.getenv("ANDROID_KEYSTORE_PASSWORD")
+            keyAlias System.getenv("ANDROID_KEY_ALIAS")
+            keyPassword System.getenv("ANDROID_KEY_PASSWORD")
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir{
+        dirs '../capacitor-cordova-android-plugins/src/main/libs', 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:$androidxCoordinatorLayoutVersion"
+    implementation "androidx.core:core-splashscreen:$coreSplashScreenVersion"
+    implementation project(':capacitor-android')
+    testImplementation "junit:junit:$junitVersion"
+    androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
+    implementation project(':capacitor-cordova-android-plugins')
+}
+
+apply from: 'capacitor.build.gradle'
+
+try {
+    def servicesJSON = file('google-services.json')
+    if (servicesJSON.text) {
+        apply plugin: 'com.google.gms.google-services'
+    }
+} catch(Exception e) {
+    logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+}

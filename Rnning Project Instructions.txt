@@ -1,0 +1,12 @@
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Running Go server
+cd "C:\Users\Lanterns\Documents\Degree Final Project Dev\La Luna HMS\backend"
+go run .\cmd\server
+
+Run Frontend
+node node_modules/vite/bin/vite.js dev
+
+Run NGROK
+ngrok http --domain=rosy-lubricate-ranged.ngrok-free.dev 8080

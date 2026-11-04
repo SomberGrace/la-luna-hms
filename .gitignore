@@ -1,0 +1,37 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Generated dependencies and build output
+**/node_modules/
+**/.svelte-kit/
+**/.gradle/
+**/build/
+**/dist/
+*.apk
+*.aab
+*.exe
+**/local.properties
+
+# Generated frontend and Android build output
+frontend/node_modules/
+frontend/.svelte-kit/
+frontend/build/
+frontend/dist/
+frontend/android/.gradle/
+frontend/android/local.properties
+frontend/android/app/build/
+frontend/android/**/build/
+frontend/android/app/src/main/assets/public/
+
+# Local Go binaries and generated files
+*.exe
+*.test
+coverage.out

@@ -1,0 +1,8 @@
+label,action,target,x,y,w,h
+Back to /kitchen,nav,/kitchen,14,11,34,34
+Notifications,toast,,342,11,34,34
+Handover Send the closing count to the evening chef and the manager co,toast,,14,574,362,59
+Orders,nav,/kitchen,8,662,92,48
+Stock,nav,/kitchen/stock,102,662,92,48
+Recipes,nav,/kitchen/recipes,196,662,92,48
+Reports,nav,/kitchen/reports,290,662,92,48

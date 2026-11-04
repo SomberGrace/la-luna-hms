@@ -18,6 +18,7 @@ type AuthenticatedUser struct {
 	Role     string
 }
 
+// Authenticates JWT claims
 func parseAuthClaims(secret string, r *http.Request) (*AuthenticatedUser, error) {
 	authHeader := r.Header.Get("Authorization")
 	if authHeader == "" || !strings.HasPrefix(authHeader, "Bearer ") {

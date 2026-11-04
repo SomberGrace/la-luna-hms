@@ -9,11 +9,14 @@ Create a Render Web Service from the repository with:
 | Setting | Value |
 |---|---|
 | Runtime | Docker |
-| Dockerfile path | `backend/Dockerfile` |
-| Docker context | `backend` |
+| Root directory | `backend` |
+| Dockerfile path | `Dockerfile` |
+| Docker context directory | `.` |
 | Region | Frankfurt, if available for the account |
 | Instance | Free |
 | Health check path | `/api/v1/health` |
+
+Render resolves the Dockerfile and context paths relative to the service's **Root Directory**. With the settings above, the Dockerfile is `backend/Dockerfile` in the repository and the context is the `backend` folder. Alternatively, leave Root Directory blank and use Dockerfile path `backend/Dockerfile` with Docker context directory `backend`; do not combine the paths from these two configurations.
 
 Set these service environment variables. Do not commit their values:
 

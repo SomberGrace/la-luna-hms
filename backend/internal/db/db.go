@@ -12,7 +12,7 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
-// InitDB initializes PostgreSQL connection pool and verifies connectivity.
+//initializes connection and verifies connection
 func InitDB(cfg *config.Config) (*sql.DB, error) {
 	if cfg == nil || cfg.DatabaseURL == "" {
 		return nil, fmt.Errorf("empty database URL")
